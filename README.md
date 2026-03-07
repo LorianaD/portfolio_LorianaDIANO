@@ -13,7 +13,7 @@ Je suis actuellement en formation **Développeur Web et Web Mobile (RNCP Bac+2)*
 J’ai une double compétence :
 
 - Développement web
-- Gestion administrative et organisation de projet
+- Gestion administrative et organisation
 
 Mon objectif est de devenir **développeuse web et évoluer vers des rôles de coordination ou gestion de projet**.
 
