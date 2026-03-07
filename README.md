@@ -72,7 +72,7 @@ Outils
 Cloner le repository :
 
 ```bash
-git clone https://github.com/ton-username/portfolio.git
+git clone https://github.com/LorianaD/portfolio_LorianaDIANO.git
 ````
 
 Entrer dans le dossier :
