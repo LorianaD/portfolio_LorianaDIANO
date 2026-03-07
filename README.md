@@ -78,7 +78,7 @@ git clone https://github.com/LorianaD/portfolio_LorianaDIANO.git
 Entrer dans le dossier :
 
 ```bash
-cd portfolio
+cd portfolio_LorianaDIANO
 ```
 
 Installer les dépendances :
