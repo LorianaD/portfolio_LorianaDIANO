@@ -2,16 +2,16 @@ import { Link } from "react-router"
 
 function Header() {
     return(
-        <header>
+        <header className="header">
             <div>
-                <h1>
+                <h1 className="title_site">
                     <Link to="/">
                         Loriana DIANO
                     </Link>
                 </h1>
             </div>
             <nav>
-                <ul>
+                <ul className="nav">
                     <li>
                         <Link to="/">
                             Accueil

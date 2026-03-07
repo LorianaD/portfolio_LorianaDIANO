@@ -1,0 +1,82 @@
+@reference "tailwindcss";
+
+/********************
+******* HEADER ******
+********************/
+
+.header {
+    @apply flex 
+        p-[20px]
+        justify-between
+        items-center 
+        bg-[#FFFFFF] 
+        shadow-[0_2px_2px_0_#D9D9D9];
+}
+
+.title_site {
+    @apply text-[#1F2A44]
+        font-semibold
+}
+
+.nav {
+    @apply flex
+        justify-end
+        items-center
+        gap-[20px]
+        text-[#5A6A85]
+        text-[14px]
+}
+
+/********************
+******* FOOTER ******
+********************/
+
+.footer {
+    @apply flex
+        px-[120px] py-[60px]
+        flex-col
+        justify-center
+        items-start
+        border-t
+        border-[#E5E7EB]
+        bg-[#F8FAFC]
+        gap-[24px]
+        text-[12px]
+}
+
+.footer-top {
+    @apply flex
+        justify-between
+        items-start
+        w-full
+}
+
+.footer-bottom {
+    @apply flex
+        justify-center
+        w-full
+        text-[#6B7280]
+}
+
+.footer-titles {
+    @apply flex
+        flex-col
+        items-start
+        gap-[8px]
+}
+
+.footer-links {
+    @apply flex
+        justify-center
+        items-center
+        gap-[16px]
+        text-[#6B7280]
+}
+
+/*******************
+******* MAIN *******
+*******************/
+
+main {
+    @apply min-h-screen
+}
