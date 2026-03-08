@@ -22,7 +22,7 @@ const projects = [
             variant: "primary",
         },
         secondaryButton: {
-            href: "#",
+            href: "https://github.com/LorianaD/project_marsai-bordeaux-groupe_LVETM",
             label: "Voir le code",
             variant: "outline",
         },
@@ -36,11 +36,11 @@ const projects = [
             "Application web destinée à faciliter la gestion administrative des mesures de protection juridique (tutelle, curatelle).",
         techs: ["React", "Symfony", "MySQL"],
         status: "En développement",
-        primaryButton: {
-            href: "#",
-            label: "Voir le projet",
-            variant: "primary",
-        },
+        // primaryButton: {
+        //     href: "#",
+        //     label: "Voir le projet",
+        //     variant: "primary",
+        // },
         // secondaryButton: {
         //     href: "#",
         //     label: "Voir le code",
@@ -55,11 +55,11 @@ const projects = [
             "Développement d’une application web en architecture MVC avec gestion des entités et base de données relationnelle.",
         techs: ["React", "Symfony", "MySQL"],
         status: "À venir",
-        primaryButton: {
-            href: "#",
-            label: "Voir le projet",
-            variant: "primary",
-        },
+        // primaryButton: {
+        //     href: "#",
+        //     label: "Voir le projet",
+        //     variant: "primary",
+        // },
     },
 ];
 

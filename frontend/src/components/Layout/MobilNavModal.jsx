@@ -23,8 +23,8 @@ function MobilNavModal({ closeMenu }) {
             <div>
                 <ul className="menu-body">
                     <li><Link to="/" onClick={closeMenu}>Accueil</Link></li>
-                    <li><Link onClick={closeMenu}>Projets</Link></li>
-                    <li><Link onClick={closeMenu}>À propos</Link></li>
+                    {/* <li><Link onClick={closeMenu}>Projets</Link></li> */}
+                    {/* <li><Link onClick={closeMenu}>À propos</Link></li> */}
                 </ul>
             </div>
         </div>

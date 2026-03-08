@@ -2,6 +2,9 @@ import Btn from "../../ui/Btn"
 import profile from "../../../assets/images/photo.png"
 
 function Hero({}) {
+
+    const projects = "#";
+
     return (
         <section className="home-hero-container">
 
@@ -24,7 +27,7 @@ function Hero({}) {
                         Développeuse web alliant rigueur organisationnelle et vision produit, je conçois des plateformes structurées, performantes et évolutives.
                     </p>
                     <div className="home-hero-btns-container">
-                        <Btn>
+                        <Btn href={projects}>
                             Voir mes projets
                         </Btn>
                         <Btn variant="secondary">

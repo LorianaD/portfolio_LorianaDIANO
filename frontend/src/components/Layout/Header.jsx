@@ -31,18 +31,18 @@ function Header() {
                             Accueil
                         </Link>
                     </li>
-                    <span>|</span>
+                    {/* <span>|</span>
                     <li>
                         <Link>
                             Projets
                         </Link>
-                    </li>
-                    <span>|</span>
+                    </li> */}
+                    {/* <span>|</span>
                     <li>
                         <Link>
                             À propos
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
             </nav>
             <div className="nav-mobile" onClick={openMenu}>

@@ -4,7 +4,7 @@
     @apply
         flex
         pt-[140px] px-[120px] pb-[120px]
-        justify-center
+        justify-between
         items-center
         gap-[80px]
         bg-linear-180
@@ -121,6 +121,7 @@
         flex
         flex-col
         gap-[80px]
+        max-md:gap-[60px]
 }
 
 .home-projects-secondary {
@@ -129,8 +130,9 @@
         justify-center
         items-start
         h-full
-        gap-[20px]
-
+        gap-[80px]
+        max-md:flex-col
+        max-md:gap-[60px]
 }
 
 /* MEDIAS */
@@ -146,6 +148,18 @@
         width: 460px;
         height: 460px;
     }
+
+    .home-projects {
+    @apply
+        gap-[60px]
+    }
+
+    .home-projects-secondary {
+        @apply
+            flex-col
+            gap-[60px]
+    }
+
 }
 
 /* Mobile */

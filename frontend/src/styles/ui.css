@@ -38,10 +38,6 @@
         flex-col
         items-center
         gap-[80px]
-        max-md:py-[60px]
-        max-md:px-[120px]
-        max-sm:px-[60px]
-        max-md:gap-[60px]
         w-full
 }
 
@@ -81,7 +77,6 @@
         items-center
         gap-[80px]
         bg-[#FFFFFF]
-        max-md:flex-col
         rounded-[16px]
 }
 
@@ -105,7 +100,7 @@
 .project-card-content {
     @apply
         flex
-        max-w-[520px]
+        /* max-w-[520px] */
         p-[10px]
         flex-col
         items-start
@@ -118,6 +113,7 @@
         text-[#2F5D9F]
         text-[28px]
         font-medium
+        h-[85px]
 }
 
 .project-card-description {
@@ -158,4 +154,29 @@
         justify-center
         items-center
         gap-[20px]
+}
+
+/* Tablette */
+@media (max-width: 66rem) {
+    .section-container {
+        @apply 
+            flex-col
+            py-[60px]
+            px-[120px]
+            gap-[60px]            
+    }
+
+    .project-card {
+        @apply
+            flex-col
+
+    }
+}
+
+/* Mobile */
+@media (max-width: 40rem) {
+    .section-container {
+        @apply
+            p-[60px]
+    }
 }
