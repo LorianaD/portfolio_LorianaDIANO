@@ -1,8 +1,8 @@
 function Btn({ children, variant = "primary", href, to, type = "button" }) {
 
     const classes = {
-        primary: "btn-primary",
-        secondary: "btn-secondary"
+        primary: "btn btn-primary",
+        secondary: "btn btn-secondary"
     }
 
     if (href) {
@@ -29,3 +29,13 @@ function Btn({ children, variant = "primary", href, to, type = "button" }) {
 }
 
 export default Btn
+
+// Utilisation
+
+// <Btn href="#projects">
+//      Me contacter
+// </Btn>
+
+// <Btn variant="secondary">
+//      Me contacter
+// </Btn>

@@ -1,0 +1,161 @@
+@reference "tailwindcss";
+
+/********************
+****** Boutons ******
+********************/
+
+.btn {
+    @apply flex
+        py-[14px] px-[28px]
+        justify-center
+        items-center
+        gap-[16px]
+        rounded-[8px]
+        text-[12px]
+        cursor-pointer
+}
+
+.btn-primary {
+    @apply
+        bg-[#5A6A85]
+        text-[#FFFFFF]
+}
+
+.btn-secondary {
+    @apply
+        border
+        border-[#5F84C3]
+        bg-[#FFFFFF]
+        text-[#5F84C3]
+}
+
+/* SECTIONS GENERALES */
+
+.section-container {
+    @apply
+        flex
+        p-[120px]
+        flex-col
+        items-center
+        gap-[80px]
+        max-md:py-[60px]
+        max-md:px-[120px]
+        max-sm:px-[60px]
+        max-md:gap-[60px]
+        w-full
+}
+
+.section-header {
+    @apply
+        flex
+        flex-col
+        items-start
+        gap-[12px]
+        pb-[60px]
+        w-full
+}
+
+.section-title {
+    @apply
+        text-[#1F2A44]
+        text-[36px]
+        font-semibold
+        max-sm:text-[22px]
+}
+
+.section-text {
+    @apply
+        text-[#5A6A85]
+        text-[15px]
+        leading-[22px]
+        max-sm:text-[14px]
+}
+
+/* Carte projets */
+
+.project-card {
+    @apply
+        flex
+        p-[32px]
+        justify-center
+        items-center
+        gap-[80px]
+        bg-[#FFFFFF]
+        max-md:flex-col
+        rounded-[16px]
+}
+
+.project-card-visual {
+    @apply
+        flex
+        flex-col
+        items-center
+        justify-center
+        rounded-[16px]
+        shadow-[0_16px_40px_0_rgba(0,0,0,0.08)]
+        p-[10px]
+}
+
+.project-card-img {
+    @apply
+        w-full
+        rounded-[16px]
+}
+
+.project-card-content {
+    @apply
+        flex
+        max-w-[520px]
+        p-[10px]
+        flex-col
+        items-start
+        gap-[16px]
+
+}
+
+.project-card-content-title {
+    @apply
+        text-[#2F5D9F]
+        text-[28px]
+        font-medium
+}
+
+.project-card-description {
+    @apply
+        text-[#5A6A85]
+}
+
+.project-card-techs {
+    @apply
+        text-[#5F84C3]
+        text-[14px]
+        flex
+        gap-[14px]
+}
+
+.project-card-roles {
+    @apply
+        text-[#1F2A44]
+        text-[14px]
+        list-disc
+}
+
+.project-card-status {
+    @apply
+        text-[12px]
+        font-medium
+        flex
+        px-[8px] py-[4px]
+        justify-center
+        items-center
+        rounded-[6px]
+        bg-[#EAF1FB]
+}
+
+.project-card-actions {
+    @apply
+        flex
+        justify-center
+        items-center
+        gap-[20px]
+}

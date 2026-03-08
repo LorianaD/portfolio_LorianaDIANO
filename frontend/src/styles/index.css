@@ -1,7 +1,10 @@
 @import "tailwindcss";
 @import "./Layout.css";
 @import "./App.css";
+@import "./ui.css";
+@import "./Sections.css";
 
 :root {
   font-family: "Inter", sans-serif;
+  background-color: #F8FAFC;
 }
