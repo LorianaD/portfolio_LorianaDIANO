@@ -10,7 +10,8 @@
         justify-between
         items-center 
         bg-[#FFFFFF] 
-        shadow-[0_2px_2px_0_#D9D9D9];
+        shadow-[0_2px_2px_0_#D9D9D9]
+        w-full
 }
 
 .title_site {
@@ -19,12 +20,51 @@
 }
 
 .nav {
+    @apply max-md:hidden
+}
+
+.nav-list {
     @apply flex
         justify-end
         items-center
         gap-[20px]
         text-[#5A6A85]
         text-[14px]
+        w-full
+}
+
+.nav-mobile {
+    @apply hidden
+        max-md:block
+        w-[32px]
+        cursor-pointer
+}
+
+.menu-close {
+    @apply w-[32px]
+        cursor-pointer
+}
+
+.menu-body {
+    @apply flex
+        p-[30px]
+        flex-col
+        items-start
+        gap-[60px]
+        text-[#5A6A85]
+}
+
+.mobilNavModal {
+    @apply bg-[#FFFFFF]
+        fixed
+        inset-0
+        z-50
+        flex
+        flex-col
+        justify-start
+        items-start
+        w-full
+        h-screen
 }
 
 /********************
@@ -42,6 +82,8 @@
         bg-[#F8FAFC]
         gap-[24px]
         text-[12px]
+        max-md:px-[60px] max-md:py-[30px]
+        max-md:gap-[24px]
 }
 
 .footer-top {
@@ -49,6 +91,8 @@
         justify-between
         items-start
         w-full
+        max-md:flex-col
+        max-md:gap-[20px]
 }
 
 .footer-bottom {
