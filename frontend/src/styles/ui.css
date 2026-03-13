@@ -33,6 +33,17 @@
 ****** SECTIONS GENERALES ******
 *******************************/
 
+.hero-container {
+    @apply
+        pt-[100px] px-[120px] pb-[80px]
+        gap-[25px]
+        bg-linear-180
+        from-[#F8FAFC] to-[#EEF3FA]
+        flex
+        flex-col
+        items-start
+}
+
 .section-container {
     @apply
         flex
