@@ -1,6 +1,6 @@
 import htlmIcon from "../assets/images/html.png";
 import cssIcon from "../assets/images/css.png";
-import jsIcon from "../assets/images/JavaScript.png";
+import jsIcon from "../assets/images/javascript.png";
 import reactIcon from "../assets/images/react.svg";
 import nodeIcon from "../assets/images/nodejs.png";
 import phpIcon from "../assets/images/php.png";
