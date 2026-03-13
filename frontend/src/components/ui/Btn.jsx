@@ -1,4 +1,4 @@
-function Btn({ children, variant = "primary", href, to, type = "button" }) {
+function Btn({ children, variant = "primary", href, download, to, type = "button" }) {
 
     const classes = {
         primary: "btn btn-primary",
@@ -7,7 +7,7 @@ function Btn({ children, variant = "primary", href, to, type = "button" }) {
 
     if (href) {
         return (
-            <a href={href} className={classes[variant]}>
+            <a href={href} className={classes[variant]} download={download} target="_blank" rel="noopener noreferrer">
                 {children}
             </a>
         )

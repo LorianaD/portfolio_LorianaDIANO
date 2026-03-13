@@ -1,6 +1,6 @@
-function SectionText({ children }) {
+function SectionText({ children, className }) {
     return(
-        <p className="section-text">
+        <p className={`section-text ${className}`}>
             { children }
         </p>
     )

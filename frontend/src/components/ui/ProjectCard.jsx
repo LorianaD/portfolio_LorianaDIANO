@@ -1,3 +1,4 @@
+import Badge from "./Badge";
 import Btn from "./Btn";
 
 function ProjectCard({img, showImage = true, title, description, techs=[], roles=[], status, variant = "primary", primaryButton, secondaryButton }) {
@@ -43,9 +44,9 @@ function ProjectCard({img, showImage = true, title, description, techs=[], roles
                 )}
 
                 {status && (
-                    <span className="project-card-status">
+                    <Badge className="project-card-status">
                         {status}
-                    </span>
+                    </Badge>
                 )}
 
                 {(primaryButton || secondaryButton) && (

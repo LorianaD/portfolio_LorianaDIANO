@@ -29,7 +29,9 @@
         text-[#5F84C3]
 }
 
-/* SECTIONS GENERALES */
+/*******************************
+****** SECTIONS GENERALES ******
+*******************************/
 
 .section-container {
     @apply
@@ -67,7 +69,15 @@
         max-sm:text-[14px]
 }
 
-/* Carte projets */
+.section-body {
+    @apply
+        w-full
+        flex
+}
+
+/***************************
+******* Carte projets ******
+***************************/
 
 .project-card {
     @apply
@@ -179,4 +189,110 @@
         @apply
             p-[60px]
     }
+}
+
+/***************************
+******* Carte skills *******
+***************************/
+
+.skillsCard_box {
+    @apply
+        relative
+        w-[325px]
+        h-[160px]
+        bg-[#FFFFFF]
+        shadow-[0_8px_20px_0_rgba(0,0,0,0.08)]
+        rounded-[16px]
+        p-[24px]
+}
+
+.skillsCard,
+.skillsCard_hover {
+    @apply
+        w-full
+        h-full
+        absolute
+        inset-0
+        flex
+        flex-col
+        gap-4
+        p-[24px]
+}
+
+.skillsCard {
+    display: flex;
+}
+
+.skillsCard_hover {
+    display: none;
+}
+
+.skillsCard_box:hover .skillsCard {
+    display: none;
+}
+
+.skillsCard_box:hover .skillsCard_hover {
+    display: flex;
+}
+
+.skillsCard_title {
+    @apply
+        text-[15px]
+        font-bold
+        leading-[22px]
+}
+
+.skillsCard_body {
+    @apply
+        w-full
+        h-full
+        flex
+        justify-center
+}
+
+.skillsCard_icons {
+    @apply
+        flex
+        gap-[16px]
+        flex-wrap
+        justify-center
+        items-center
+        w-full
+}
+
+.skillsCard_iconBox {
+    @apply
+        w-[50px]
+        h-[50px]
+        flex
+        justify-center
+        items-center
+}
+
+.skillsCard_icon {
+    @apply
+        w-full
+        h-full
+}
+
+.skillsCard_list {
+    @apply
+        w-full
+        h-full
+        flex-col
+        flex-wrap
+        text-[15px]
+        gap-2
+}
+
+/* Badge */
+
+.badge {
+    @apply
+        flex
+        justify-center
+        items-center
+        px-[8px] py-[4px]
+        rounded-[6px]
+        bg-[#EAF1FB]
 }
