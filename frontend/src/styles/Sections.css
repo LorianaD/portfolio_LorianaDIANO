@@ -239,6 +239,11 @@ span {
             gap-[60px]
     }
 
+    .skills_cards {
+        @apply
+            flex-wrap
+    }
+
 }
 
 /* Mobile */
@@ -285,4 +290,16 @@ span {
         height: 300px;
     }
 
+    .home-about-left {
+        width: 270px;
+        height: 270px;
+    }
+
+    .home-contact-body-box {
+        @apply
+            flex-col
+            h-full
+    }
+
+    
 }

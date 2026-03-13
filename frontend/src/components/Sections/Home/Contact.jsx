@@ -18,13 +18,13 @@ function Contact() {
                     <Btn variant="secondary" href="mailto:loriana.diano@gmail.com">
                         loriana.diano@gmail.com
                     </Btn>
-                    <a href="https://www.linkedin.com/in/loriana-diano-33187ba8/">
+                    <a href="https://www.linkedin.com/in/loriana-diano-33187ba8/" className="icons">
                         <img src={linkedin} alt="LinkedIn" />
                     </a>
-                    <a href="https://github.com/LorianaD">
+                    <a href="https://github.com/LorianaD" className="icons">
                         <img src={github} alt="GitHub" />
                     </a>
-                    <Btn variant="secondary" href={cv} download="CV_Loriana_Diano.pdf" >
+                    <Btn variant="secondary" href={cv} download="CV_Loriana_Diano.pdf">
                         Télécharger mon CV
                     </Btn>
                 </div>

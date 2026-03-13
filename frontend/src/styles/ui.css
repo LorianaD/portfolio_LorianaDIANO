@@ -166,31 +166,6 @@
         gap-[20px]
 }
 
-/* Tablette */
-@media (max-width: 66rem) {
-    .section-container {
-        @apply 
-            flex-col
-            py-[60px]
-            px-[120px]
-            gap-[60px]            
-    }
-
-    .project-card {
-        @apply
-            flex-col
-
-    }
-}
-
-/* Mobile */
-@media (max-width: 40rem) {
-    .section-container {
-        @apply
-            p-[60px]
-    }
-}
-
 /***************************
 ******* Carte skills *******
 ***************************/
@@ -263,7 +238,7 @@
 .skillsCard_iconBox {
     @apply
         w-[50px]
-        h-[50px]
+        /* h-[50px] */
         flex
         justify-center
         items-center
@@ -285,6 +260,12 @@
         gap-2
 }
 
+.icons {
+    @apply
+        w-[50px]
+        h-[50px]
+}
+
 /* Badge */
 
 .badge {
@@ -295,4 +276,54 @@
         px-[8px] py-[4px]
         rounded-[6px]
         bg-[#EAF1FB]
+}
+
+/* Tablette */
+@media (max-width: 66rem) {
+    .section-container {
+        @apply 
+            flex-col
+            py-[60px]
+            px-[120px]
+            gap-[60px]            
+    }
+
+    .project-card {
+        @apply
+            flex-col
+
+    }
+
+    .section-body {
+        @apply
+            w-full
+            flex-wrap
+    }
+}
+
+/* Mobile */
+@media (max-width: 40rem) {
+    .section-container {
+        @apply
+            p-[60px]
+    }
+
+    .project-card-content-title {
+        @apply
+            h-full
+    }
+
+    .skillsCard_box {
+        @apply
+            w-full
+    }
+
+    .skillsCard_iconBox {
+        @apply
+            w-[20%]
+            flex
+            justify-center
+            items-center
+    }
+
 }

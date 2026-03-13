@@ -1,9 +1,10 @@
 import Btn from "../../ui/Btn"
 import profile from "../../../assets/images/photo.png"
+import cv from "../../../assets/documents/CV_LorianaDIANO_DeveloppeuseWeb.pdf"
 
 function Hero({}) {
 
-    const projects = "#";
+    const projects = "/";
 
     return (
         <section className="home-hero-container">
@@ -30,7 +31,7 @@ function Hero({}) {
                         <Btn href={projects}>
                             Voir mes projets
                         </Btn>
-                        <Btn variant="secondary">
+                        <Btn variant="secondary" href={cv} download="CV_Loriana_Diano.pdf">
                             Télécharger mon CV
                         </Btn>
                     </div>

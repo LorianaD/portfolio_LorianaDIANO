@@ -10,7 +10,7 @@ function Projects() {
     const secondaryProjects = projects.slice(1, 3);
 
     return (
-        <SectionContainer>
+        <SectionContainer id="projects">
 
             <SectionHeader 
                 title="Projets" 
