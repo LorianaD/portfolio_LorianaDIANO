@@ -42,6 +42,7 @@
         gap-[25px]
         bg-linear-180
         from-[#F8FAFC] to-[#EEF3FA]
+        w-full
 }
 
 .hero-header {
@@ -93,6 +94,7 @@
         flex
         flex-col
         items-start
+        w-full
 }
 
 .section-container {
@@ -369,7 +371,9 @@
         h-[50px]
 }
 
-/* Badge */
+/***************************
+********** Badge ***********
+***************************/
 
 .badge {
     @apply
@@ -379,6 +383,50 @@
         px-[8px] py-[4px]
         rounded-[6px]
         bg-[#EAF1FB]
+}
+
+/***************************
+**** Carte Working Way *****
+***************************/
+
+.working-way-card {
+    @apply
+        flex
+        flex-col
+        items-center
+        gap-[10px]
+        bg-[#FFFFFF]
+        rounded-[16px]
+        px-[20px]
+        py-[24px]
+        shadow-[0_4px_12px_rgba(0,0,0,0.04)];
+}
+
+.working-way-card-icon-wrapper {
+    @apply
+        w-[100px]
+        h-[100px]
+        rounded-b-full
+}
+
+.working-way-card-icon {
+    @apply
+        w-full
+        h-full
+}
+
+.working-way-card-title {
+    @apply
+        text-[24px]
+        font-semibold
+        text-[#1E2A4A];
+}
+
+.working-way-card-description {
+    @apply
+        text-[16px]
+        leading-[25px]
+        text-[#2E2E2E];
 }
 
 /******************************

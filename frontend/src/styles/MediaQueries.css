@@ -31,6 +31,11 @@
             flex-wrap
     }
 
+    .working-way-list {
+    @apply
+        flex-wrap
+}
+
 }
 
 /***************************************
@@ -91,5 +96,18 @@
             h-full
     }
 
+    .about-hero-photo-container {
+        @apply
+            w-full
+            flex
+            justify-center
+            items-center
+    }
+
+    .about-hero-photo-box {
+        @apply
+            w-[270px]
+            h-[270px]
+    }
     
 }

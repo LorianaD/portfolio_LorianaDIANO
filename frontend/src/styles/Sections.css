@@ -391,3 +391,13 @@
         leading-[1.5]
         text-[#2E2E2E]
 }
+
+/************ Section WorkingWay ************/
+
+.working-way-list {
+    @apply
+        flex
+        justify-center
+        items-center
+        gap-[30px];
+}
