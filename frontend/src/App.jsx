@@ -4,6 +4,7 @@ import MainLayout from './components/Layout/MainLayout'
 
 import HomePage from './pages/HomePage.jsx'
 import ProjectsPage from './pages/ProjectsPage.jsx'
+import AboutPage from './pages/AboutPage.jsx'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Route element={<MainLayout/>}>
           <Route path='/' element={<HomePage/>}/>
           <Route path='/projects' element={<ProjectsPage/>}/>
+          <Route path='/about' element={<AboutPage/>}/>
         </Route>
       </Routes>
     </>

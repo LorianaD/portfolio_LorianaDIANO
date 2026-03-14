@@ -1,0 +1,95 @@
+/* MEDIAS QUERIES */
+
+/***************************************
+************* Tablette *****************
+***************************************/
+
+@media (max-width: 66rem) {
+    .home-hero-container {
+        @apply 
+            flex-col
+    }
+
+    .home-hero-ellipse {
+        width: 460px;
+        height: 460px;
+    }
+
+    .home-projects {
+    @apply
+        gap-[60px]
+    }
+
+    .home-projects-secondary {
+        @apply
+            flex-col
+            gap-[60px]
+    }
+
+    .skills_cards {
+        @apply
+            flex-wrap
+    }
+
+}
+
+/***************************************
+*************** Mobile *****************
+***************************************/
+
+@media (max-width: 40rem) {
+    .home-hero-container {
+        @apply 
+            flex-col
+            p-[60px]
+            gap-[60px]
+    }
+
+    .home-hero-title {
+        @apply
+            text-[32px]
+            tracking-[-0.32px]
+            leading-[40px]
+    }
+
+    .home-hero-text-title {
+        @apply
+            text-[18px]
+            leading-[26px]
+    }
+
+    .home-hero-stacks {
+        @apply
+            text-[14px]
+            leading-[20px]
+    }
+
+    .home-hero-description {
+        @apply
+            text-[14px]
+            leading-[22px]
+    } 
+
+    .home-hero-img {
+        width: 270px;
+        height: 270px;
+    }
+
+    .home-hero-ellipse {
+        width: 300px;
+        height: 300px;
+    }
+
+    .home-about-left {
+        width: 270px;
+        height: 270px;
+    }
+
+    .home-contact-body-box {
+        @apply
+            flex-col
+            h-full
+    }
+
+    
+}
