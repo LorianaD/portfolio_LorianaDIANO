@@ -152,6 +152,7 @@
         gap-[80px]
         bg-[#FFFFFF]
         rounded-[16px]
+        w-full
 }
 
 .project-card--image-left {
@@ -236,12 +237,20 @@
         text-[#5A6A85]
 }
 
+.project-card-tech-icon {
+    @apply
+        w-[52px]
+        h-[52px]
+}
+
 .project-card-techs {
     @apply
         text-[#5F84C3]
         text-[14px]
-        /* flex
-        gap-[14px] */
+        flex
+        gap-[14px]
+        items-center
+        pb-[24px]
 }
 
 .project-card-roles {

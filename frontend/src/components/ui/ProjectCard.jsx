@@ -1,7 +1,7 @@
 import Badge from "./Badge";
 import Btn from "./Btn";
 
-function ProjectCard({img, title, description, techs=[], roles=[], status, layout = "compact", imagePosition = "left", primaryButton, secondaryButton }) {
+function ProjectCard({img, title, description, techs=[], roles=[], icon_techs=[], status, layout = "compact", imagePosition = "left", primaryButton, secondaryButton }) {
 
     const articleClass = `project-card project-card--${layout} project-card--image-${imagePosition}`;
     
@@ -28,21 +28,22 @@ function ProjectCard({img, title, description, techs=[], roles=[], status, layou
                         {description}
                     </p>
                 )}
+
                 {techs.length > 0 && (
                     <div className="project-card-techs">
-
                         {layout === "detailed" ? (
+                            icon_techs.map((iconTech, index) => (
+                                <div key={`${techs[index]}-${index}`} className="project-card-tech-icon">
+                                    <img src={iconTech} alt={techs[index]} title={techs[index]}/>
+                                </div>
+                            ))
+                        ) : (
                             techs.map((tech, index) => (
-                                <span key={`${tech}-${index}`} className="project-card-tech" >
+                                <span key={`${tech}-${index}`} className="project-card-tech">
                                     {tech}
                                 </span>
                             ))
-                        ) : (
-                            <p className="project-card-techs-inline">
-                                {techs.join(" • ")}
-                            </p>
                         )}
-
                     </div>
                 )}
 
