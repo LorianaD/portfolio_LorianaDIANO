@@ -22,7 +22,7 @@ function Projects() {
                 {mainProject && (
                     <ProjectCard
                         {...mainProject}
-                        showImage={true}
+                        layout="featured"
                     />
                 )}
 
@@ -31,7 +31,7 @@ function Projects() {
                         <ProjectCard
                             key={project.id}
                             {...project}
-                            showImage={false}
+                            layout="compact"
                         />
                     ))}
                 </div>

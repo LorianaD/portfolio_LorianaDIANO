@@ -1,11 +1,13 @@
 import Badge from "./Badge";
 import Btn from "./Btn";
 
-function ProjectCard({img, showImage = true, title, description, techs=[], roles=[], status, variant = "primary", primaryButton, secondaryButton }) {
+function ProjectCard({img, title, description, techs=[], roles=[], status, layout = "compact", imagePosition = "left", primaryButton, secondaryButton }) {
 
+    const articleClass = `project-card project-card--${layout} project-card--image-${imagePosition}`;
+    
     return(
-        <article className={`project-card ${variant}`}>
-            {showImage && img && (
+        <article className={articleClass}>
+            {(layout === "featured" || layout === "detailed") && img && (
                 <div className="project-card-visual">
                     <img src={img} alt={title} className="project-card-img"/>
                 </div>
@@ -14,6 +16,13 @@ function ProjectCard({img, showImage = true, title, description, techs=[], roles
                 <h3 className="project-card-content-title">
                     {title}
                 </h3>
+
+                {status && (
+                    <Badge className="project-card-status">
+                        {status}
+                    </Badge>
+                )}
+
                 {description && (
                     <p className="project-card-description">
                         {description}
@@ -22,16 +31,22 @@ function ProjectCard({img, showImage = true, title, description, techs=[], roles
                 {techs.length > 0 && (
                     <div className="project-card-techs">
 
-                        {techs.map((tech, index) => (
-                            <span key={`${tech}-${index}`} className="project-card-tech" >
-                                {tech}
-                            </span>
-                        ))}
+                        {layout === "detailed" ? (
+                            techs.map((tech, index) => (
+                                <span key={`${tech}-${index}`} className="project-card-tech" >
+                                    {tech}
+                                </span>
+                            ))
+                        ) : (
+                            <p className="project-card-techs-inline">
+                                {techs.join(" • ")}
+                            </p>
+                        )}
 
-                    </div>   
+                    </div>
                 )}
 
-                {roles.length > 0 && (
+                {roles.length > 0 &&  layout !== "compact" && (
                     <ul className="project-card-roles">
 
                         {roles.map((role, index) => (
@@ -43,19 +58,13 @@ function ProjectCard({img, showImage = true, title, description, techs=[], roles
                     </ul>   
                 )}
 
-                {status && (
-                    <Badge className="project-card-status">
-                        {status}
-                    </Badge>
-                )}
-
                 {(primaryButton || secondaryButton) && (
                     <div className="project-card-actions">
                         {primaryButton && (
                             <Btn
                                 href={primaryButton.href}
                                 to={primaryButton.to}
-                                variant="primary"
+                                variant={primaryButton.variant || "primary"}
                             >
                                 {primaryButton.label}
                             </Btn>
@@ -65,7 +74,7 @@ function ProjectCard({img, showImage = true, title, description, techs=[], roles
                             <Btn
                                 href={secondaryButton.href}
                                 to={secondaryButton.to}
-                                variant="secondary"
+                                variant={secondaryButton.variant || "secondary"}
                             >
                                 {secondaryButton.label}
                             </Btn>

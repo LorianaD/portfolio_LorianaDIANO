@@ -9,7 +9,7 @@ const projects = [
         title: "MarsAI – Plateforme de festival IA",
         description:
             "Conception et développement d’une plateforme web complète dédiée à un festival international de courts-métrages générés par intelligence artificielle.",
-        techs: ["React", "•","Node", "•","MySQL", "•", "Tailwind"],
+        techs: ["React","Node", "MySQL", "Tailwind"],
         roles: [
             "Développement front-end",
             "Architecture back-end",

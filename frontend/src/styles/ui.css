@@ -152,15 +152,57 @@
         rounded-[16px]
 }
 
+.project-card--image-left {
+    @apply flex-row;
+}
+
+.project-card--image-right {
+    @apply flex-row-reverse;
+}
+
+.project-card--featured {
+    @apply
+        flex
+        items-center
+        gap-[80px]
+        p-[32px];
+}
+
+.project-card-compact {
+    @apply
+        flex-col
+        gap-[12px]
+        p-[24px]
+        shadow-[0_8px_24px_rgba(0,0,0,0.05)];
+}
+
+.project-card-compact .project-card-content {
+    @apply w-full;
+}
+
+.project-card-compact .project-card-visual {
+    @apply hidden;
+}
+
+.project-card-detailed {
+    @apply
+        flex
+        items-center
+        gap-[80px]
+        p-[40px];
+}
+
 .project-card-visual {
     @apply
         flex
-        flex-col
+        /* flex-col */
         items-center
         justify-center
         rounded-[16px]
         shadow-[0_16px_40px_0_rgba(0,0,0,0.08)]
         p-[10px]
+        w-[50%]
+        overflow-hidden;
 }
 
 .project-card-img {
@@ -172,7 +214,6 @@
 .project-card-content {
     @apply
         flex
-        /* max-w-[520px] */
         p-[10px]
         flex-col
         items-start
@@ -185,7 +226,7 @@
         text-[#2F5D9F]
         text-[28px]
         font-medium
-        h-[85px]
+        min-h-[85px]
 }
 
 .project-card-description {
@@ -197,8 +238,8 @@
     @apply
         text-[#5F84C3]
         text-[14px]
-        flex
-        gap-[14px]
+        /* flex
+        gap-[14px] */
 }
 
 .project-card-roles {
@@ -223,7 +264,7 @@
 .project-card-actions {
     @apply
         flex
-        justify-center
+        /* justify-center */
         items-center
         gap-[20px]
 }
@@ -340,6 +381,10 @@
         bg-[#EAF1FB]
 }
 
+/******************************
+******** MEDIA QUERIES ********
+******************************/
+
 /* Tablette */
 @media (max-width: 66rem) {
     .section-container {
@@ -347,13 +392,24 @@
             flex-col
             py-[60px]
             px-[120px]
-            gap-[60px]            
+            gap-[60px]
+            w-full
     }
 
     .project-card {
         @apply
             flex-col
+            w-full
+    }
 
+    .project-card-visual {
+        @apply
+            w-full
+    }
+
+    .project-card-content {
+        @apply
+            w-full
     }
 
     .section-body {
