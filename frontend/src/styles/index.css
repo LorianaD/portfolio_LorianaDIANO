@@ -8,3 +8,7 @@
   font-family: "Inter", sans-serif;
   background-color: #F8FAFC;
 }
+
+.separator {
+  margin: 0 12px;
+}

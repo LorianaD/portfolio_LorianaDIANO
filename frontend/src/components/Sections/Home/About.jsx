@@ -24,8 +24,8 @@ function About() {
                         </div>
                         
                         <p>
-                            <span>Stack principale :</span>
-                            <span>React · Node.js · Symfony · MySQL</span>
+                            <span className="block">Stack principale :</span>
+                            <span className="block">React • Node.js • Symfony • MySQL</span>
                         </p>
                         
                     </div>

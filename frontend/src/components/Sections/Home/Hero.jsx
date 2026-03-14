@@ -4,7 +4,7 @@ import cv from "../../../assets/documents/CV_LorianaDIANO_DeveloppeuseWeb.pdf"
 
 function Hero({}) {
 
-    const projects = "/";
+    const projects = "/projects";
 
     return (
         <section className="home-hero-container">

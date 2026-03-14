@@ -1,11 +1,12 @@
 import SectionHeroHeader from "./SectionHeroHeader"
 
-function SectionHero() {
+function SectionHero({ eyebrow, title, description, children, className = "" }) {
     return(
-        <section className="hero-container">
-            <SectionHeroHeader>
-                
-            </SectionHeroHeader>
+        <section className={`hero-container ${className}`}>
+            {(eyebrow || title || description) && (
+                <SectionHeroHeader eyebrow={ eyebrow } title={ title } description={ description }/>
+            )}
+            { children }
         </section>
     )
 }

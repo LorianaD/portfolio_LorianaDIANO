@@ -27,10 +27,17 @@
     @apply flex
         justify-end
         items-center
-        gap-[20px]
+        gap-0
         text-[#5A6A85]
         text-[14px]
         w-full
+}
+
+.nav-item {
+    @apply
+        flex
+        items-center
+        justify-center
 }
 
 .nav-mobile {

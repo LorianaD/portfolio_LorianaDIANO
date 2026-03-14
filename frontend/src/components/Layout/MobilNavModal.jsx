@@ -1,5 +1,6 @@
 import { Link } from "react-router"
 import menuClose from "../../assets/images/close.png"
+import links from "../../data/links"
 
 function MobilNavModal({ closeMenu }) {
 
@@ -22,9 +23,13 @@ function MobilNavModal({ closeMenu }) {
             </div>
             <div>
                 <ul className="menu-body">
-                    <li><Link to="/" onClick={closeMenu}>Accueil</Link></li>
-                    {/* <li><Link onClick={closeMenu}>Projets</Link></li> */}
-                    {/* <li><Link onClick={closeMenu}>À propos</Link></li> */}
+                    {links.map((link) => (
+                        <li key={link.to}>
+                            <Link to={link.to} onClick={closeMenu}>
+                                {link.name}
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </div>

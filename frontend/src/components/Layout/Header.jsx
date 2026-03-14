@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router"
 import MobilNavModal from "./MobilNavModal";
 import menuBurger from "../../assets/images/menu-burger.png"
+import links from "../../data/links";
 
 function Header() {  
 
@@ -26,23 +27,16 @@ function Header() {
             </div>
             <nav className="nav">
                 <ul className="nav-list">
-                    <li>
-                        <Link to="/">
-                            Accueil
-                        </Link>
-                    </li>
-                    {/* <span>|</span>
-                    <li>
-                        <Link>
-                            Projets
-                        </Link>
-                    </li> */}
-                    {/* <span>|</span>
-                    <li>
-                        <Link>
-                            À propos
-                        </Link>
-                    </li> */}
+                    {links.map((link, index) => (
+                        <li key={link.to} className="nav-item">
+                            <Link to={link.to}>
+                                {link.name}
+                            </Link>
+                            {index < links.length - 1 && (
+                                <span className="separator">|</span>
+                            )}
+                        </li>
+                    ))}
                 </ul>
             </nav>
             <div className="nav-mobile" onClick={openMenu}>
