@@ -28,7 +28,7 @@ function Hero({}) {
                         Développeuse web alliant rigueur organisationnelle et vision produit, je conçois des plateformes structurées, performantes et évolutives.
                     </p>
                     <div className="home-hero-btns-container">
-                        <Btn href={projects}>
+                        <Btn to={projects}>
                             Voir mes projets
                         </Btn>
                         <Btn variant="secondary" href={cv} download="CV_Loriana_Diano.pdf">
