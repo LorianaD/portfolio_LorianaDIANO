@@ -2,7 +2,7 @@ const careerPath = [
     {
         id: 1,
         period: "2025 — 2026",
-        title: "Développeuse Web & Web Mobile",
+        title: "Titre RNCP Développeuse Web & Web Mobile (BAC+2)",
         school: "La Plateforme_, Bordeaux (33)",
         description:
             "HTML, CSS, JavaScript, React, Node.js, PHP, Symfony, MySQL."
