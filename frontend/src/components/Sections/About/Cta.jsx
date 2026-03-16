@@ -15,7 +15,7 @@ function Contact() {
                     <Btn variant="primary" to="/projects">
                         Voir mes projets
                     </Btn>
-                    <Btn variant="secondary">
+                    <Btn variant="secondary" href="mailto:loriana.diano@gmail.com">
                         Me contacter
                     </Btn>
                 </div>

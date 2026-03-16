@@ -11,9 +11,15 @@ function Footer() {
                     </p>
                 </div>
                 <div className="footer-links">
-                    <p>LinkedIn</p>
-                    <p>GitHub</p>
-                    <p>E-mail</p>
+                    <a href="https://www.linkedin.com/in/loriana-diano-33187ba8/" target="_blanket">
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/LorianaD" target="_blanket">
+                        GitHub
+                    </a>
+                    <a href="mailto:loriana.diano@gmail.com">
+                        E-mail
+                    </a>
                 </div>
             </div>
             <div className="footer-bottom">
