@@ -380,6 +380,27 @@
         h-[50px]
 }
 
+.about_skillsCard_box {
+    @apply
+        relative
+        w-[325px]
+        h-[160px]
+        bg-[#FFFFFF]
+        shadow-[0_8px_20px_0_rgba(0,0,0,0.08)]
+        rounded-[16px]
+        p-[24px]
+}
+
+.about_skillsCard_icons {
+    @apply
+        flex
+        gap-[16px]
+        flex-wrap
+        justify-center
+        items-center
+        w-full
+}
+
 /***************************
 ********** Badge ***********
 ***************************/

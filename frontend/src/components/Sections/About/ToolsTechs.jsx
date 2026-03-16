@@ -1,7 +1,7 @@
 import skills from "../../../data/skills";
 import SectionContainer from "../../ui/SectionContainer";
 import SectionHeader from "../../ui/SectionHeader";
-import SkillsCard from "../../ui/SkillsCard";
+import SkillsCardAbout from "../../ui/SkillsCardAbout";
 
 function ToolsTechs() {
 
@@ -14,9 +14,9 @@ function ToolsTechs() {
             />
 
             <div className="about_skills_cards">
-                <SkillsCard title="Front-end" items={Object.values(skillsData["front-end"])}/>
-                <SkillsCard title="Back-end" items={Object.values(skillsData["back-end"])}/>
-                <SkillsCard title="Outils" items={Object.values(skillsData["outils"])}/>
+                <SkillsCardAbout title="Front-end" items={Object.values(skillsData["front-end"])}/>
+                <SkillsCardAbout title="Back-end" items={Object.values(skillsData["back-end"])}/>
+                <SkillsCardAbout title="Outils" items={Object.values(skillsData["outils"])}/>
             </div>
         </SectionContainer>
     )

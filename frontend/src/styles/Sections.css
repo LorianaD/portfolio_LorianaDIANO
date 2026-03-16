@@ -401,3 +401,15 @@
         items-center
         gap-[30px];
 }
+
+/************ Section Skills ************/
+
+.about_skills_cards {
+    @apply
+        flex
+        w-full
+        justify-center
+        items-center
+        gap-[60px]
+        flex-wrap
+}
