@@ -32,9 +32,24 @@
     }
 
     .working-way-list {
-    @apply
-        flex-wrap
-}
+        @apply
+            flex-wrap
+    }
+
+    .about-hero-photo-container {
+        @apply
+            w-full
+            justify-center
+            items-center
+    }
+
+    .about-hero-photo-container {
+        @apply
+            w-full
+            flex
+            justify-center
+            items-center
+    }
 
 }
 
@@ -108,6 +123,11 @@
         @apply
             w-[270px]
             h-[270px]
+    }
+
+    .hobbies-cards-box {
+    @apply
+        flex-col
     }
     
 }

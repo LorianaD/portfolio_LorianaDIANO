@@ -1,3 +1,5 @@
+import { Link } from "react-router"
+
 function Btn({ children, variant = "primary", href, download, to, type = "button" }) {
 
     const classes = {

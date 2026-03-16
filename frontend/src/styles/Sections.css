@@ -399,7 +399,8 @@
         flex
         justify-center
         items-center
-        gap-[30px];
+        gap-[30px]
+        w-wfull
 }
 
 /************ Section Skills ************/
@@ -412,4 +413,16 @@
         items-center
         gap-[60px]
         flex-wrap
+}
+
+/************ Section Hobbies ************/
+
+.hobbies-cards-box {
+    @apply
+        flex
+        justify-center
+        items-center
+        gap-[40px]
+        flex-wrap
+        w-full
 }

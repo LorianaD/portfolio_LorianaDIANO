@@ -459,6 +459,56 @@
         text-[#2E2E2E];
 }
 
+/***************************
+**** Carte Working Way *****
+***************************/
+
+.hobby-card {
+    @apply
+        flex
+        w-[327px]
+        p-[20px]
+        flex-col
+        items-center
+        gap-[10px]
+        rounded-[16px]
+        bg-[#FFFFFF]
+}
+
+.hobby-card-icon-wrapper {
+    @apply
+        w-[100px]
+        h-[100px]
+        rounded-b-full
+}
+
+.hobby-card-icon {
+    @apply
+        w-full
+        h-full
+}
+
+.hobby-card-text-wrapper {
+    @apply
+        flex
+        flex-col
+        items-start
+        gap-[10px]    
+}
+
+.hobby-card-title {
+    @apply
+        text-[24px]
+        font-semibold
+}
+
+.hobby-card-description {
+    @apply
+        text-[16px]
+        h-[72px]
+        overflow-hidden
+}
+
 /******************************
 ******** MEDIA QUERIES ********
 ******************************/
