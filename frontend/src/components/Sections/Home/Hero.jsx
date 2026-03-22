@@ -22,7 +22,7 @@ function Hero({}) {
                         Développeuse Web
                     </h2>
                     <p className="home-hero-stacks">
-                        React • Node • Symfony • MySQL
+                        Front-end • Back-end • Bases de données
                     </p>
                     <p className="home-hero-description">
                         Développeuse web alliant rigueur organisationnelle et vision produit, je conçois des plateformes structurées, performantes et évolutives.
