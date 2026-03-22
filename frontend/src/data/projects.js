@@ -24,7 +24,7 @@ const projects = [
             "Coordination technique (Scrum)",
         ],
         primaryButton: {
-            href: "/projects",
+            to: "/projects",
             label: "Voir le projet",
             variant: "primary",
         },
