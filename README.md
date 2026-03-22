@@ -125,8 +125,8 @@ Ce portfolio a pour objectif :
 Loriana DIANO
 
 Email : loriana.diano@gmail.com  
-LinkedIn : (à ajouter)  
-Portfolio : (lien du site quand il sera en ligne)
+LinkedIn : https://www.linkedin.com/in/loriana-diano-33187ba8
+Portfolio : https://loriana.dianoholding.com/
 
 ## Licence
 
