@@ -214,6 +214,11 @@
         rounded-[16px]
 }
 
+.project-card-visual:hover {
+    @apply
+        scale-125
+}
+
 .project-card-content {
     @apply
         flex

@@ -5,7 +5,11 @@ import node from "../assets/images/nodejs.png";
 import tailwind from "../assets/images/tailwind.png";
 import symfony from "../assets/images/symfony.png";
 import mysql from "../assets/images/mysql.png";
-import defaultImg from "../assets/images/defaultScreen.png"
+import html from "../assets/images/html.png";
+import js from "../assets/images/javascript.png";
+import css from "../assets/images/css.png";
+import defaultImg from "../assets/images/defaultScreen.png";
+import calculatorImg from "../assets/images/screenshotCalculator.png";
 
 const projects = [
     {
@@ -14,7 +18,7 @@ const projects = [
         img: marsaiImg,
         title: "MarsAI – Plateforme de festival IA",
         description:
-            "Conception et développement d’une plateforme web complète dédiée à un festival international de courts-métrages générés par intelligence artificielle.",
+            "Conception et développement d’une plateforme web complète dédiée à un festival international de courts-métrages générés par l' IA.",
         techs: ["React","Node", "MySQL", "Tailwind"],
         icon_techs: [react, node, mysql, tailwind],
         roles: [
@@ -44,11 +48,11 @@ const projects = [
         techs: ["React", "Symfony", "MySQL"],
         icon_techs: [react, symfony, mysql],
         status: "En développement",
-        // primaryButton: {
-        //     href: "#",
-        //     label: "Voir le projet",
-        //     variant: "primary",
-        // },
+        primaryButton: {
+            to: "/projects",
+            label: "Voir le projet",
+            variant: "primary",
+        },
         secondaryButton: {
             href: "https://github.com/LorianaD/protegeo-showcase",
             label: "Voir le code",
@@ -61,15 +65,15 @@ const projects = [
         img: defaultImg,
         title: "Projet VitaTrack",
         description:
-            "Développement d’une application web en architecture MVC avec gestion des entités et base de données relationnelle.",
+            "Application web de suivi de données santé (poids, IMC, évolution) avec gestion des utilisateurs et des mesures.",
         techs: ["React", "Node", "MySQL"],
         icon_techs: [react, node, mysql],
         status: "En développement",
-        // primaryButton: {
-        //     href: "#",
-        //     label: "Voir le projet",
-        //     variant: "primary",
-        // },
+        primaryButton: {
+            to: "/projects",
+            label: "Voir le projet",
+            variant: "primary",
+        },
         secondaryButton: {
             href: "https://github.com/LorianaD/projet_afit",
             label: "Voir le code",
@@ -82,17 +86,38 @@ const projects = [
         img: defaultImg,
         title: "Projet EventUp",
         description:
-            "Développement d’une application web en architecture MVC avec gestion des entités et base de données relationnelle.",
+            "Développement d’une application web fullstack axée sur la structuration du projet et la factorisation. Mise en place d’un système d’authentification et d’upload de médias.",
         techs: ["React", "Node", "MySQL"],
         icon_techs: [react, node, mysql, tailwind],
         status: "En développement",
-        // primaryButton: {
-        //     href: "#",
-        //     label: "Voir le projet",
-        //     variant: "primary",
-        // },
+        primaryButton: {
+            to: "/projects",
+            label: "Voir le projet",
+            variant: "primary",
+        },
         secondaryButton: {
             href: "https://github.com/LorianaD/projet-eventup",
+            label: "Voir le code",
+            variant: "secondary",
+        },
+    },
+    {
+        id: 5,
+        variant: "secondary",
+        img: calculatorImg,
+        title: "Petit Mathogénie – Calculatrice interactive",
+        description:
+            "Développement d’une calculatrice interactive en JavaScript, intégrée dans une page web conçue comme une expérience pédagogique.",
+        techs: ["HTML", "CSS", "JS"],
+        icon_techs: [html, css, js],
+        status: "En développement",
+        primaryButton: {
+            href: "https://petit-mathogenie.dianoholding.com",
+            label: "Voir le projet",
+            variant: "primary",
+        },
+        secondaryButton: {
+            href: "https://github.com/LorianaD/Projet-calculator",
             label: "Voir le code",
             variant: "secondary",
         },
