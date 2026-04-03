@@ -1,5 +1,6 @@
 import Badge from "./Badge";
 import Btn from "./Btn";
+import LinkWrapper from "./LinkWrapper";
 
 function ProjectCard({img, title, description, techs=[], roles=[], icon_techs=[], status, layout = "compact", imagePosition = "left", primaryButton, secondaryButton }) {
 
@@ -8,9 +9,9 @@ function ProjectCard({img, title, description, techs=[], roles=[], icon_techs=[]
     return(
         <article className={articleClass}>
             {(layout === "featured" || layout === "detailed") && img && (
-                <div className="project-card-visual">
+                <LinkWrapper to={primaryButton?.to} href={primaryButton?.href} className="project-card-visual">
                     <img src={img} alt={title} className="project-card-img"/>
-                </div>
+                </LinkWrapper>
             )}
             <div className="project-card-content">
                 <h3 className="project-card-content-title">
@@ -89,8 +90,3 @@ function ProjectCard({img, title, description, techs=[], roles=[], icon_techs=[]
 }
 
 export default ProjectCard
-
-// Mettre des variants pour faire toutes les type de carte de projet, 
-// dans la home comme dans la page projets. Projet principal, projets secondaires,
-// image ou non, statu rôles, taille de titres en base à projet principal ou secondaire
-// à noter que les projets secondaire sont dans la home page

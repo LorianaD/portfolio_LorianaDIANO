@@ -22,16 +22,16 @@ const projects = [
         techs: ["React","Node", "MySQL", "Tailwind"],
         icon_techs: [react, node, mysql, tailwind],
         roles: [
+            "Conception CMS full-stack",
             "Développement front-end",
-            "Architecture back-end",
-            "Conception CMS dynamique",
+            "Gestion BDD & contenus dynamiques",
             "Coordination technique (Scrum)",
         ],
-        primaryButton: {
-            to: "/projects",
-            label: "Voir le projet",
-            variant: "primary",
-        },
+        // primaryButton: {
+        //     to: "/projects",
+        //     label: "Voir le projet",
+        //     variant: "primary",
+        // },
         secondaryButton: {
             href: "https://github.com/LorianaD/project_marsai-bordeaux-groupe_LVETM",
             label: "Voir le code",
@@ -49,7 +49,7 @@ const projects = [
         icon_techs: [react, symfony, mysql],
         status: "En développement",
         primaryButton: {
-            to: "/projects",
+            href: "https://protegeo.netlify.app/",
             label: "Voir le projet",
             variant: "primary",
         },
@@ -70,7 +70,7 @@ const projects = [
         icon_techs: [react, node, mysql],
         status: "En développement",
         primaryButton: {
-            to: "/projects",
+            href: "https://vitatrack-afit.netlify.app/",
             label: "Voir le projet",
             variant: "primary",
         },
@@ -91,7 +91,7 @@ const projects = [
         icon_techs: [react, node, mysql, tailwind],
         status: "En développement",
         primaryButton: {
-            to: "/projects",
+            href: "https://event-ia.netlify.app/",
             label: "Voir le projet",
             variant: "primary",
         },
