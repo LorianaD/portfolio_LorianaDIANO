@@ -49,7 +49,7 @@ const projects = [
         icon_techs: [react, symfony, mysql],
         status: "En développement",
         primaryButton: {
-            href: "https://protegeo.netlify.app/",
+            href: "https://www.protegeo.dianoholding.com",
             label: "Voir le projet",
             variant: "primary",
         },
