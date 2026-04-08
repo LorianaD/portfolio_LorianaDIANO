@@ -1,5 +1,3 @@
-import marsaiImg from "../assets/images/marsai.png";
-import protegeoImg from "../assets/images/protegeo.png";
 import react from "../assets/images/react.png";
 import node from "../assets/images/nodejs.png";
 import tailwind from "../assets/images/tailwind.png";
@@ -8,8 +6,13 @@ import mysql from "../assets/images/mysql.png";
 import html from "../assets/images/html.png";
 import js from "../assets/images/javascript.png";
 import css from "../assets/images/css.png";
-import defaultImg from "../assets/images/defaultScreen.png";
-import calculatorImg from "../assets/images/screenshotCalculator.png";
+
+import defaultImg from "../assets/images/screenshot/defaultScreen.png";
+
+import marsaiImg from "../assets/images/screenshot/marsai.png";
+import protegeoImg from "../assets/images/screenshot/screenshotProtegeo.png";
+import calculatorImg from "../assets/images/screenshot/screenshotCalculator.png";
+import vitatrackImg from "../assets/images/screenshot/screenshotVitatrack.png";
 
 const projects = [
     {
@@ -62,7 +65,7 @@ const projects = [
     {
         id: 3,
         variant: "secondary",
-        img: defaultImg,
+        img: vitatrackImg,
         title: "Projet VitaTrack",
         description:
             "Application web de suivi de données santé (poids, IMC, évolution) avec gestion des utilisateurs et des mesures.",
@@ -70,7 +73,7 @@ const projects = [
         icon_techs: [react, node, mysql],
         status: "En développement",
         primaryButton: {
-            href: "https://vitatrack-afit.netlify.app/",
+            href: "https://vitatrack.dianoholding.com/",
             label: "Voir le projet",
             variant: "primary",
         },

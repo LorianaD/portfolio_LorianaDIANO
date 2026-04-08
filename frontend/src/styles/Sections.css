@@ -219,6 +219,13 @@
         h-[50px]
 }
 
+.home-contact-body-icons {
+    @apply
+        flex
+        items-center
+        justify-center
+}
+
 /***************************************
 ************* ABOUT PAGE ***************
 ***************************************/
