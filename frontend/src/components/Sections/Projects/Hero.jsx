@@ -14,8 +14,8 @@ function Hero() {
 
     return(
         <SectionHero eyebrow={eyebrow} title={title} description={description}>
-            <Btn>
-                Voir mes projets
+            <Btn href={"https://github.com/LorianaD"}>
+                Voir mes codes
             </Btn>
         </SectionHero>
     )

@@ -13,6 +13,7 @@ import marsaiImg from "../assets/images/screenshot/marsai.png";
 import protegeoImg from "../assets/images/screenshot/screenshotProtegeo.png";
 import calculatorImg from "../assets/images/screenshot/screenshotCalculator.png";
 import vitatrackImg from "../assets/images/screenshot/screenshotVitatrack.png";
+import eventupImg from "../assets/images/screenshot/screenshotEventUp.png";
 
 const projects = [
     {
@@ -86,7 +87,7 @@ const projects = [
     {
         id: 4,
         variant: "secondary",
-        img: defaultImg,
+        img: eventupImg,
         title: "Projet EventUp",
         description:
             "Développement d’une application web fullstack axée sur la structuration du projet et la factorisation. Mise en place d’un système d’authentification et d’upload de médias.",
