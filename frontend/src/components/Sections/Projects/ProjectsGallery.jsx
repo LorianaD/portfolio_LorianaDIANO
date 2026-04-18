@@ -1,11 +1,17 @@
 import SectionContainer from "../../ui/SectionContainer"
 import projects from "../../../data/projects";
 import ProjectCard from "../../ui/ProjectCard";
+import getTranslatedProject from "../../../helper/translations/getTranslatedProject";
 
-function ProjectsGallery() {
+function ProjectsGallery({ locale = "fr" }) {
+
+    const translatedProjects = projects.map((project) =>
+        getTranslatedProject(project, locale)
+    );
+
     return (
         <SectionContainer id="projects">
-                {projects.map((project, index) => (
+                {translatedProjects.map((project, index) => (
                     <ProjectCard
                         key={project.id}
                         {...project}
