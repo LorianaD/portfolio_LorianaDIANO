@@ -1,21 +1,26 @@
 import SectionHero from "../../ui/SectionHero";
 import Btn from "../../ui/Btn";
+import getTranslatedData from "../../../helper/translations/getTranslatedData";
+import { projectsHero } from "../../../data/projectsPage";
 
-function Hero() {
+function Hero({ locale = "fr" }) {
 
-    const eyebrow = "Mes projets";
-    const title = "Mes projets Web";
+    const content = getTranslatedData(projectsHero, locale);
+
     const description = (
         <>
-            Découvrez une sélection de projets réalisés pendant ma formation de développeuse web.<br/>
-            Ils illustrent mes compétences en{" "}<span className="important">HTML, CSS, JavaScript, React, Node.js et bases de données</span>.
+            {content.description1}<br/>
+            {content.description2}{" "}
+            <span className="important">
+                {content.highlight}
+            </span>.
         </>
     );
 
     return(
-        <SectionHero eyebrow={eyebrow} title={title} description={description}>
+        <SectionHero eyebrow={content.eyebrow} title={content.title} description={description}>
             <Btn href={"https://github.com/LorianaD"}>
-                Voir mes codes
+                {content.cta}
             </Btn>
         </SectionHero>
     )
