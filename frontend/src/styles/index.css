@@ -4,6 +4,7 @@
 @import "./ui.css";
 @import "./Sections.css";
 @import "./MediaQueries.css";
+@import "./language-switcher.css";
 
 :root {
   font-family: "Inter", sans-serif;

@@ -1,8 +1,16 @@
 import { Link } from "react-router"
 import menuClose from "../../assets/images/close.png"
-import links from "../../data/links"
+import getTranslatedData from "../../helper/translations/getTranslatedData";
 
-function MobilNavModal({ closeMenu }) {
+function MobilNavModal({ closeMenu, links = [], locale = "fr" }) {
+
+    const menuLabels = {
+        fr: "Fermer le menu",
+        en: "Close menu",
+        it: "Chiudi il menu"
+    };
+
+    const menuAlt = getTranslatedData(menuLabels, locale);
 
     return (
         <div className="mobilNavModal">
@@ -10,23 +18,23 @@ function MobilNavModal({ closeMenu }) {
 
                 <div>
                     <h1 className="title_site">
-                        <Link to="/">
+                        <Link to="/" onClick={closeMenu}>
                             Loriana DIANO
                         </Link>
                     </h1>
                 </div>
 
-                <div className="menu-close" onClick={closeMenu}>
-                    <img src={menuClose} alt="fermer le menu" />
-                </div>
+                <button className="menu-close" onClick={ closeMenu }>
+                    <img src={ menuClose } alt={ menuAlt } />
+                </button>
 
             </div>
             <div>
                 <ul className="menu-body">
                     {links.map((link) => (
                         <li key={link.to}>
-                            <Link to={link.to} onClick={closeMenu}>
-                                {link.name}
+                            <Link to={link.to} onClick={ closeMenu }>
+                                { link.name }
                             </Link>
                         </li>
                     ))}

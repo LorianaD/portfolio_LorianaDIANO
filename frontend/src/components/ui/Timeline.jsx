@@ -1,6 +1,6 @@
 import TimelineItem from "./TimelineItem";
 
-function Timeline({ items }) {
+function Timeline({ items = [] }) {
     return (
         <div className="timeline">
 

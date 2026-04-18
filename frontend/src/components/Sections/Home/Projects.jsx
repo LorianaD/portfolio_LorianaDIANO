@@ -2,19 +2,28 @@ import ProjectCard from "../../ui/ProjectCard.jsx"
 import SectionContainer from "../../ui/SectionContainer.jsx"
 import SectionHeader from "../../ui/SectionHeader.jsx"
 import projects from "../../../data/projects.js";
+import getTranslatedData from "../../../helper/translations/getTranslatedData.js";
+import getTranslatedProject from "../../../helper/translations/getTranslatedProject.js";
+import { homeProjects } from "../../../data/home.js";
 
-function Projects() {
+function Projects({ locale = "fr" }) {
 
-    const mainProject = projects[0];
+    const sectionContent = getTranslatedData(homeProjects, locale);
 
-    const secondaryProjects = projects.slice(1, 3);
+    const translatedProjects = projects.map((project) =>
+        getTranslatedProject(project, locale)
+    );
+
+    const mainProject = translatedProjects[0];
+
+    const secondaryProjects = translatedProjects.slice(1, 3);
 
     return (
         <SectionContainer id="projects">
 
             <SectionHeader 
-                title="Projets" 
-                description="Plateformes web conçues avec une approche produit, une architecture structurée et une attention portée à l’expérience utilisateur." 
+                title={sectionContent.title} 
+                description={sectionContent.description}
             />
 
             <div className="home-projects">

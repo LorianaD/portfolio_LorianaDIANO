@@ -1,10 +1,13 @@
-import Btn from "../../ui/Btn"
-import profile from "../../../assets/images/photo.png"
-import cv from "../../../assets/documents/CV_LorianaDIANO_DeveloppeuseWeb.pdf"
+import Btn from "../../ui/Btn";
+import profile from "../../../assets/images/photo.png";
+import cv from "../../../assets/documents/CV_LorianaDIANO_DeveloppeuseWeb.pdf";
+import { homeHero } from "../../../data/home";
+import getTranslatedData from "../../../helper/translations/getTranslatedData";
 
-function Hero({}) {
+function Hero({ locale = "fr" }) {
 
     const projects = "/projects";
+    const content = getTranslatedData(homeHero, locale);
 
     return (
         <section className="home-hero-container">
@@ -19,20 +22,20 @@ function Hero({}) {
                 </div>
                 <div className="home-hero-text-container">
                     <h2 className="home-hero-text-title">
-                        Développeuse Web
+                        {content.jobTitle}
                     </h2>
                     <p className="home-hero-stacks">
-                        Front-end • Back-end • Bases de données
+                        {content.stacks}
                     </p>
                     <p className="home-hero-description">
-                        Développeuse web alliant rigueur organisationnelle et vision produit, je conçois des plateformes structurées, performantes et évolutives.
+                        {content.description}
                     </p>
                     <div className="home-hero-btns-container">
                         <Btn to={projects}>
-                            Voir mes projets
+                            {content.ctaProjects}
                         </Btn>
                         <Btn variant="secondary" href={cv} download="CV_Loriana_Diano.pdf">
-                            Télécharger mon CV
+                            {content.ctaCV}
                         </Btn>
                     </div>
                     
