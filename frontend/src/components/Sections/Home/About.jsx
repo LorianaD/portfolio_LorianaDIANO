@@ -2,15 +2,23 @@ import SectionContainer from "../../ui/SectionContainer"
 import SectionHeader from "../../ui/SectionHeader"
 import SectionBody from "../../ui/SectionBody"
 import profile from "../../../assets/images/photo.png"
+import { homeAbout } from "../../../data/homePage"
+import getTranslatedData from "../../../helper/translations/getTranslatedData"
+import useImageModal from "../../../hooks/useImageModal"
 
-function About() {
+function About({ locale = "fr" }) {
+
+    const content = getTranslatedData(homeAbout, locale);
+
+    const { isOpen, openModal, closeModal } = useImageModal();
+
     return(
         <SectionContainer>
             <SectionHeader 
-                title="À propos"
+                title={content.title}
             />
             <SectionBody className="home-about-body">
-                <div className="home-about-left">
+                <div className="home-about-left" onClick={openModal}>
                     <img src={profile} alt="Loriana DIANO" className="home-hero-img-photo" />
                 </div>
                 <div className="home-about-right">
@@ -18,20 +26,31 @@ function About() {
                     <div className="home-about-description">
                         
                         <div className="home-about-description-paragraphe">
-                            <p>Développeuse web en formation RNCP, je conçois des applications web structurées et évolutives.</p>
-                            <p>Mon parcours en gestion et comptabilité m’a apporté une forte rigueur organisationnelle et une bonne compréhension des besoins métiers.</p>
-                            <p>Aujourd’hui, je mets ces compétences au service du développement web afin de créer des plateformes utiles, fiables et bien conçues.</p>
+                            {content.paragraphs.map((paragraph, index) => (
+                                <p key={index}>{paragraph}</p>
+                            ))}
                         </div>
                         
                         <p>
-                            <span className="block">Stack principale :</span>
-                            <span className="block">React • Node.js • Symfony • MySQL</span>
+                            <span className="block">{content.stackLabel}</span>
+                            <span className="block">{content.stackValue}</span>
                         </p>
                         
                     </div>
                     
                 </div>
             </SectionBody>
+
+            {isOpen && (
+                <div className="image-modal" onClick={closeModal}>
+                    <img
+                        src={profile}
+                        alt="Loriana DIANO"
+                        className="image-modal-img"
+                    />
+                </div>
+            )}
+
         </SectionContainer>
     )
 }

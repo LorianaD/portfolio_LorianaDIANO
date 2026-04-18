@@ -4,7 +4,7 @@ import SectionHeader from "../../ui/SectionHeader.jsx"
 import projects from "../../../data/projects.js";
 import getTranslatedData from "../../../helper/translations/getTranslatedData.js";
 import getTranslatedProject from "../../../helper/translations/getTranslatedProject.js";
-import { homeProjects } from "../../../data/home.js";
+import { homeProjects } from "../../../data/homePage.js";
 
 function Projects({ locale = "fr" }) {
 

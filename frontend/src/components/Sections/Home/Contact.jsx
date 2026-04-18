@@ -5,13 +5,18 @@ import SectionBody from "../../ui/SectionBody"
 import linkedin from "../../../assets/images/linkedin.png"
 import github from "../../../assets/images/github.png"
 import cv from "../../../assets/documents/CV_LorianaDIANO_DeveloppeuseWeb.pdf"
+import getTranslatedData from "../../../helper/translations/getTranslatedData"
+import { homeContact } from "../../../data/homePage"
 
-function Contact() {
+function Contact({ locale = "fr" }) {
+
+    const content = getTranslatedData(homeContact, locale);
+    
     return(
         <SectionContainer>
             <SectionHeader
-                title="Contact"
-                description="Je suis actuellement à la recherche d’une alternanceou d’une opportunité pour poursuivre mon évolutiondans le développement web."
+                title={content.title}
+                description={content.description}
             />
             <SectionBody className="home-contact-body-container">
                 <div className="home-contact-body-box">
@@ -27,7 +32,7 @@ function Contact() {
                         </a>
                     </div>
                     <Btn variant="secondary" href={cv} download="CV_Loriana_Diano.pdf">
-                        Télécharger mon CV
+                        {content.ctaCV}
                     </Btn>
                 </div>
             </SectionBody>

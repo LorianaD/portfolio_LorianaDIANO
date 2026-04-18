@@ -5,6 +5,7 @@
 @import "./Sections.css";
 @import "./MediaQueries.css";
 @import "./language-switcher.css";
+@import "./imageModal.css";
 
 :root {
   font-family: "Inter", sans-serif;

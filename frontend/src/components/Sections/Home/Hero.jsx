@@ -1,13 +1,15 @@
 import Btn from "../../ui/Btn";
 import profile from "../../../assets/images/photo.png";
 import cv from "../../../assets/documents/CV_LorianaDIANO_DeveloppeuseWeb.pdf";
-import { homeHero } from "../../../data/home";
+import { homeHero } from "../../../data/homePage";
 import getTranslatedData from "../../../helper/translations/getTranslatedData";
+import useImageModal from "../../../hooks/useImageModal";
 
 function Hero({ locale = "fr" }) {
 
     const projects = "/projects";
     const content = getTranslatedData(homeHero, locale);
+    const { isOpen, openModal, closeModal } = useImageModal();
 
     return (
         <section className="home-hero-container">
@@ -44,11 +46,21 @@ function Hero({ locale = "fr" }) {
 
             {/* Right */}
             <div className="home-hero-right">
-                <div className="home-hero-img">
+                <div className="home-hero-img" onClick={openModal}>
                     <img src={profile} alt="Loriana DIANO" className="home-hero-img-photo" />
                 </div>
                 <div  className="home-hero-ellipse" />                
             </div>
+
+            {isOpen && (
+                <div className="image-modal" onClick={closeModal}>
+                    <img
+                        src={profile}
+                        alt="Loriana DIANO"
+                        className="image-modal-img"
+                    />
+                </div>
+            )}
 
         </section>
     )

@@ -373,6 +373,7 @@
     @apply
         w-full
         h-full
+        flex
         flex-col
         flex-wrap
         text-[15px]

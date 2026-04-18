@@ -87,6 +87,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .home-hero-img {
@@ -163,7 +164,8 @@
     width: 420px;
     height: 420px;
     border-radius: 16px;
-    overflow: hidden;    
+    overflow: hidden;   
+    cursor: pointer; 
     @apply shadow-[0_12px_30px_0_rgba(0,0,0,0.08)]
 }
 
