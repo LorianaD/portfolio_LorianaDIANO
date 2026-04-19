@@ -4,18 +4,16 @@ import SectionBody from "../../ui/SectionBody"
 import Timeline from "../../ui/Timeline";
 import careerPath from "../../../data/carrerPath";
 import getTranslatedData from "../../../helper/translations/getTranslatedData";
+import { aboutCarrerPath } from "../../../data/aboutPage";
 
 function CareerPath({ locale = "fr" }) {
-    const titles = {
-        fr: "Mon parcours",
-        en: "My journey",
-        it: "Il mio percorso"
-    };
-    const title = getTranslatedData(titles, locale);
+
+    const titles = getTranslatedData( aboutCarrerPath, locale);
     const items = getTranslatedData(careerPath, locale);
+    
     return(
         <SectionContainer>
-            <SectionHeader title={title} />
+            <SectionHeader title={titles.title} />
             <SectionBody>
                 <Timeline items={items} />
             </SectionBody>

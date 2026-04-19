@@ -3,48 +3,62 @@ import profile from "../../../assets/images/photo.png";
 import Badge from "../../ui/Badge";
 import Btn from "../../ui/Btn";
 import cv from "../../../assets/documents/CV_LorianaDIANO_DeveloppeuseWeb.pdf";
+import { aboutHero } from "../../../data/aboutPage";
+import getTranslatedData from "../../../helper/translations/getTranslatedData";
+import useImageModal from "../../../hooks/useImageModal";
 
-function Hero() {
+function Hero({ locale = "fr" }) {
 
-    const title = "À propos";
+    const content = getTranslatedData(aboutHero, locale);
+
+    const { isOpen, openModal, closeModal } = useImageModal();
 
     return (
-        <SectionHero title={title}>
+        <SectionHero title={content.title}>
+
             <div className="section-body about-hero-container">
                 <div className="about-hero-photo-container">
-                    <div className="about-hero-photo-box">
+                    <div className="about-hero-photo-box" onClick={openModal}>
                         <img src={profile} alt="Photo de Loriana DIANO" className="about-hero-photo-img"/>
                     </div>
                 </div>
                 <div className="about-hero-text-container">
                     <div className="about-hero-text-titles">
                         <h1 className="about-hero-text-title">Loriana DIANO</h1>
-                        <h2 className="about-hero-text-title-2">Développeuse Web et Web Mobile</h2>
+                        <h2 className="about-hero-text-title-2">{content.jobTitle}</h2>
                     </div>
                     <div className="about-hero-text-description">
-                        <p>
-                            Après un parcours en gestion et administration, je me suis tournée vers le développement web avec l’envie de concevoir des outils numériques utiles, structurés et accessibles.
-                        </p>
-                        <p>
-                            Aujourd’hui, je développe des interfaces et des fonctionnalités web avec React, Node.js, PHP et MySQL, tout en cultivant une approche rigoureuse de l’organisation, du travail en équipe et de la conception de projet.
-                        </p>
+                        {content.descriptions.map((paragraph, index) => (
+                            <p key={index}>{paragraph}</p>
+                        ))}
                     </div>
                     <div className="about-hero-text-badges">
                         <Badge>
-                            Basée à Bordeaux
+                            {content.target1}
                         </Badge>
                         <Badge>
-                            Formation Développeuse Web & Web Mobile
+                            {content.target2}
                         </Badge>
                         <Badge>
-                            Objectif : alternance / Cheffe de projet
+                            {content.target3}
                         </Badge>
                     </div>
                     <Btn variant="primary" href={cv} download="CV_Loriana_Diano.pdf">
-                        Télécharger mon CV
+                        {content.ctaCV}
                     </Btn>
                 </div>
             </div>
+
+            {isOpen && (
+                <div className="image-modal" onClick={closeModal}>
+                    <img
+                        src={profile}
+                        alt="Loriana DIANO"
+                        className="image-modal-img"
+                    />
+                </div>
+            )}
+
         </SectionHero>
     )
 }

@@ -12,12 +12,12 @@ function AboutPage() {
 
     return (
         <main>
-            <Hero/>
+            <Hero locale={ locale } />
             <CareerPath locale={ locale } />
-            <WorkingWay/>
-            <ToolsTechs/>
-            <Hobbies/>
-            <Cta/>
+            <WorkingWay locale={ locale } />
+            <ToolsTechs locale={ locale } />
+            <Hobbies locale={ locale } />
+            <Cta locale={ locale } />
         </main>
     )
 }
