@@ -1,6 +1,5 @@
 import Btn from "../../ui/Btn";
 import profile from "../../../assets/images/photo.png";
-import cv from "../../../assets/documents/CV_LorianaDIANO_DeveloppeuseWeb.pdf";
 import { homeHero } from "../../../data/homePage";
 import getTranslatedData from "../../../helper/translations/getTranslatedData";
 import useImageModal from "../../../hooks/useImageModal";
@@ -36,7 +35,7 @@ function Hero({ locale = "fr" }) {
                         <Btn to={projects}>
                             {content.ctaProjects}
                         </Btn>
-                        <Btn variant="secondary" href={cv} download="CV_Loriana_Diano.pdf">
+                        <Btn variant="secondary" href={content.ctaHref} download="CV_LorianaDiano.pdf">
                             {content.ctaCV}
                         </Btn>
                     </div>

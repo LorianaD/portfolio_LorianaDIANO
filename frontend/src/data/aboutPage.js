@@ -9,7 +9,8 @@ const aboutHero = {
         target1: "Basée à Bordeaux",
         target2: "Formation Développeuse Web & Web Mobile",
         target3: "Objectif : alternance / Cheffe de projet",
-        ctaCV: "Télécharger mon CV"
+        ctaCV: "Télécharger mon CV",
+        ctaHref: "../../../assets/documents/CV_LorianaDIANO_DeveloppeuseWeb.pdf"
     },
 
     en: {
@@ -22,7 +23,8 @@ const aboutHero = {
         target1: "Based in Bordeaux",
         target2: "Web & Mobile Web Developer training",
         target3: "Goal: Work-study program / Project Manager",
-        ctaCV: "Download my CV"
+        ctaCV: "Download my CV",
+        ctaHref: "../../../assets/documents/CV_LorianaDIANO_DeveloppeuseWeb.pdf"
     },
 
     it: {
@@ -35,7 +37,8 @@ const aboutHero = {
         target1: "Basata a Bordeaux",
         target2: "Formazione Sviluppatrice Web & Web Mobile",
         target3: "Obiettivo: apprendistato / Project Manager",
-        ctaCV: "Scarica il mio CV"
+        ctaCV: "Scarica il mio CV",
+        ctaHref: "../../../assets/documents/CV_LorianaDIANO_DeveloppeuseWeb.pdf"
     }    
 };
 

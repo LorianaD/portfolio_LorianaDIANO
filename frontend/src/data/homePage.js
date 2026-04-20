@@ -5,7 +5,8 @@ const homeHero = {
         description:
             "Développeuse web alliant rigueur organisationnelle et vision produit, je conçois des plateformes structurées, performantes et évolutives.",
         ctaProjects: "Voir mes projets",
-        ctaCV: "Télécharger mon CV"
+        ctaCV: "Télécharger mon CV",
+        ctaHref: "../../../assets/documents/CV_LorianaDIANO_DeveloppeuseWeb.pdf",
     },
 
     en: {
@@ -14,7 +15,8 @@ const homeHero = {
         description:
             "Web developer combining organizational rigor and product vision, I design structured, scalable and high-performance platforms.",
         ctaProjects: "View my projects",
-        ctaCV: "Download my CV"
+        ctaCV: "Download my CV",
+        ctaHref: "../../../assets/documents/CV_LorianaDIANO_DeveloppeuseWeb.pdf",
     },
 
     it: {
@@ -23,7 +25,8 @@ const homeHero = {
         description:
             "Sviluppatrice web che unisce rigore organizzativo e visione prodotto, progetto piattaforme strutturate, performanti ed evolutive.",
         ctaProjects: "Vedi i miei progetti",
-        ctaCV: "Scarica il mio CV"
+        ctaCV: "Scarica il mio CV",
+        ctaHref: "../../../assets/documents/CV_LorianaDIANO_DeveloppeuseWeb.pdf",
     }
 };
 
@@ -97,17 +100,20 @@ const homeContact = {
     fr: {
         title: "Contact",
         description: "Je suis actuellement à la recherche d’une alternance ou d’une opportunité pour poursuivre mon évolution dans le développement web.",
-        ctaCV: "Télécharger mon CV"
+        ctaCV: "Télécharger mon CV",
+        ctaHref: "../../../assets/documents/CV_LorianaDIANO_DeveloppeuseWeb.pdf",
     },
     en: {
         title: "Contact",
         description: "I am currently looking for an apprenticeship or an opportunity to continue growing as a web developer.",
-        ctaCV: "Download my CV"
+        ctaCV: "Download my CV",
+        ctaHref: "../../../assets/documents/CV_LorianaDIANO_DeveloppeuseWeb.pdf",
     },
     it: {
         title: "Contatto",
         description: "Sono attualmente alla ricerca di un apprendistato o di un’opportunità per continuare a crescere nello sviluppo web.",
-        ctaCV: "Scarica il mio CV"
+        ctaCV: "Scarica il mio CV",
+        ctaHref: "../../../assets/documents/CV_LorianaDIANO_DeveloppeuseWeb.pdf",
     }
 }
 
