@@ -30,7 +30,7 @@ function Contact({ locale = "fr" }) {
                             <img src={github} alt="GitHub" />
                         </a>
                     </div>
-                    <Btn variant="secondary" href={content.ctaHref} download="CV_Loriana_Diano.pdf">
+                    <Btn variant="secondary" href={content.ctaHref} target="_blank">
                         {content.ctaCV}
                     </Btn>
                 </div>

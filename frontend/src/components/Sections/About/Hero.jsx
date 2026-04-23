@@ -43,7 +43,7 @@ function Hero({ locale = "fr" }) {
                             {content.target3}
                         </Badge>
                     </div>
-                    <Btn variant="primary" href={content.ctaHref} download="CV_Loriana_Diano.pdf">
+                    <Btn variant="primary" href={content.ctaHref} target="_blank">
                         {content.ctaCV}
                     </Btn>
                 </div>

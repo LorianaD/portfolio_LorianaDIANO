@@ -35,7 +35,7 @@ function Hero({ locale = "fr" }) {
                         <Btn to={projects}>
                             {content.ctaProjects}
                         </Btn>
-                        <Btn variant="secondary" href={content.ctaHref} download="CV_LorianaDiano.pdf">
+                        <Btn variant="secondary" href={content.ctaHref} target="_blank">
                             {content.ctaCV}
                         </Btn>
                     </div>

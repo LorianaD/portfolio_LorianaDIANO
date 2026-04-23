@@ -1,3 +1,7 @@
+import cvFr from "../assets/documents/CV_LorianaDIANO_DeveloppeuseWeb.pdf";
+import cvEn from "../assets/documents/CV_LorianaDIANO_WebDeveloper.pdf";
+import cvIt from "../assets/documents/CV_LorianaDIANO_SviluppatriceWeb.pdf";
+
 const aboutHero = {
     fr: {
         title: "À propos",
@@ -10,7 +14,8 @@ const aboutHero = {
         target2: "Formation Développeuse Web & Web Mobile",
         target3: "Objectif : alternance / Cheffe de projet",
         ctaCV: "Télécharger mon CV",
-        ctaHref: "../../../assets/documents/CV_LorianaDIANO_DeveloppeuseWeb.pdf"
+        cvName: "CV_LorianaDIANO_DeveloppeuseWeb",
+        ctaHref: cvFr,
     },
 
     en: {
@@ -24,7 +29,8 @@ const aboutHero = {
         target2: "Web & Mobile Web Developer training",
         target3: "Goal: Work-study program / Project Manager",
         ctaCV: "Download my CV",
-        ctaHref: "../../../assets/documents/CV_LorianaDIANO_DeveloppeuseWeb.pdf"
+        cvName: "CV_LorianaDIANO_WebDeveloper",
+        ctaHref: cvEn,
     },
 
     it: {
@@ -38,7 +44,8 @@ const aboutHero = {
         target2: "Formazione Sviluppatrice Web & Web Mobile",
         target3: "Obiettivo: apprendistato / Project Manager",
         ctaCV: "Scarica il mio CV",
-        ctaHref: "../../../assets/documents/CV_LorianaDIANO_DeveloppeuseWeb.pdf"
+        cvName: "CV_LorianaDIANO_SviluppatriceWeb",
+        ctaHref: cvIt,
     }    
 };
 
