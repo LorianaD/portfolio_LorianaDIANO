@@ -11,7 +11,7 @@ const careerPath = {
         {
             id: 2,
             period: "2015 — 2017",
-            title: "BTS Assistante de Gestion PME PMI",
+            title: "Niveau BTS Assistante de Gestion PME PMI",
             school: "Institut Bernom, Bordeaux (33)",
             description:
                 "Organisation, suivi administratif, relation client/fournisseur, tableaux de bord, coordination."
@@ -33,11 +33,12 @@ const careerPath = {
                 "Rigueur, logique, traitement des données, organisation."
         }
     ],
+
     en: [
         {
             id: 1,
             period: "2025 — 2026",
-            title: "RNCP Web and Mobile Web Developer Qualification (Level Bac+2)",
+            title: "RNCP Web & Mobile Web Developer Qualification (Bac+2 Level)",
             school: "La Plateforme_, Bordeaux (33)",
             description:
                 "HTML, CSS, JavaScript, React, Node.js, PHP, Symfony, MySQL."
@@ -45,7 +46,7 @@ const careerPath = {
         {
             id: 2,
             period: "2015 — 2017",
-            title: "BTS in SME Business Administration",
+            title: "BTS-level Studies in SME Business Administration",
             school: "Institut Bernom, Bordeaux (33)",
             description:
                 "Organization, administrative follow-up, client and supplier relations, dashboards, coordination."
@@ -72,7 +73,7 @@ const careerPath = {
         {
             id: 1,
             period: "2025 — 2026",
-            title: "Titolo RNCP Sviluppatrice Web e Web Mobile (BAC+2)",
+            title: "Titolo RNCP Sviluppatrice Web e Web Mobile (livello Bac+2)",
             school: "La Plateforme_, Bordeaux (33)",
             description:
                 "HTML, CSS, JavaScript, React, Node.js, PHP, Symfony, MySQL."
@@ -80,7 +81,7 @@ const careerPath = {
         {
             id: 2,
             period: "2015 — 2017",
-            title: "BTS Assistente di Gestione PMI",
+            title: "Studi di livello BTS in Gestione delle PMI",
             school: "Institut Bernom, Bordeaux (33)",
             description:
                 "Organizzazione, monitoraggio amministrativo, relazioni con clienti e fornitori, dashboard, coordinamento."

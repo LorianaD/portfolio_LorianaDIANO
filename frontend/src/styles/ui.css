@@ -292,8 +292,8 @@
 .skillsCard_box {
     @apply
         relative
-        w-[325px]
-        h-[160px]
+        w-[350px]
+        h-[250px]
         bg-[#FFFFFF]
         shadow-[0_8px_20px_0_rgba(0,0,0,0.08)]
         rounded-[16px]
@@ -378,6 +378,7 @@
         flex-wrap
         text-[15px]
         gap-2
+        p-5
 }
 
 .icons {
