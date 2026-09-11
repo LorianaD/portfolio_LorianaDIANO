@@ -1,9 +1,5 @@
 import { useOutletContext } from "react-router"
-import About from "../components/Sections/Home/About"
-import Contact from "../components/Sections/Home/Contact"
-import Hero from "../components/Sections/Home/Hero"
-import Projects from "../components/Sections/Home/Projects"
-import Skills from "../components/Sections/Home/Skills"
+import { About, Contact, Hero, Projects, Skills } from "../components/Sections/Home";
 
 function HomePage() {
 

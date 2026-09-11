@@ -1,8 +1,8 @@
 import Btn from "../../ui/Btn";
 import profile from "../../../assets/images/photo.png";
-import { homeHero } from "../../../data/homePage";
-import getTranslatedData from "../../../helper/translations/getTranslatedData";
+import { homeHero } from "../../../data";
 import useImageModal from "../../../hooks/useImageModal";
+import getTranslatedData from "../../../helper/translations/getTranslatedData";
 
 function Hero({ locale = "fr" }) {
 

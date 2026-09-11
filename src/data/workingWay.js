@@ -1,11 +1,9 @@
-import analyser from "../assets/images/analyser.png";
-import construire from "../assets/images/construire.png";
-import organiser from "../assets/images/organiser.png";
+import { analyserBadge, construireBadge, organiserBadge } from "../assets/images";
 
 const workingWay = [
     {
         id: 1,
-        icon: analyser,
+        icon: analyserBadge,
             translations: {
             fr: {
                 title: "Analyser",
@@ -23,7 +21,7 @@ const workingWay = [
     },
     {
         id: 2,
-        icon: construire,
+        icon: construireBadge,
         translations: {
             fr: {
                 title: "Construire",
@@ -41,7 +39,7 @@ const workingWay = [
     },
     {
         id: 3,
-        icon: organiser,
+        icon: organiserBadge,
         translations: {
             fr: {
                 title: "Organiser",

@@ -2,10 +2,9 @@ import Btn from "../../ui/Btn"
 import SectionContainer from "../../ui/SectionContainer"
 import SectionHeader from "../../ui/SectionHeader"
 import SectionBody from "../../ui/SectionBody"
-import linkedin from "../../../assets/images/linkedin.png"
-import github from "../../../assets/images/github.png"
 import getTranslatedData from "../../../helper/translations/getTranslatedData"
 import { homeContact } from "../../../data/homePage"
+import { githubIcon, linkedinIcon } from "../../../assets/images"
 
 function Contact({ locale = "fr" }) {
 
@@ -24,10 +23,10 @@ function Contact({ locale = "fr" }) {
                     </Btn>
                     <div className="home-contact-body-icons">
                         <a href="https://www.linkedin.com/in/loriana-diano-33187ba8/" target="_blanket" className="icons">
-                            <img src={linkedin} alt="LinkedIn" />
+                            <img src={linkedinIcon} alt="LinkedIn" />
                         </a>
                         <a href="https://github.com/LorianaD" target="_blanket" className="icons">
-                            <img src={github} alt="GitHub" />
+                            <img src={githubIcon} alt="GitHub" />
                         </a>
                     </div>
                     <Btn variant="secondary" href={content.ctaHref} target="_blank">

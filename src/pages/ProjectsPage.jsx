@@ -1,6 +1,5 @@
 import { useOutletContext } from "react-router";
-import Hero from "../components/Sections/Projects/Hero"
-import ProjectsGallery from "../components/Sections/Projects/ProjectsGallery"
+import { Hero, ProjectsGallery } from "../components/Sections/Projects";
 
 function ProjectsPage() {
 

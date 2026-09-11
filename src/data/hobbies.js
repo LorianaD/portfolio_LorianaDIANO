@@ -1,7 +1,4 @@
-import voyageBadge from "../assets/images/voyage.png"
-import creatifBadge from "../assets/images/creatif.png"
-import logiqueBadge from "../assets/images/logique.png"
-import numeriqueBadge from "../assets/images/numerique.png"
+import { creatifBadge, logiqueBadge, numeriqueBadge, voyageBadge } from "../assets/images"
 
 const hobbies = [
     {

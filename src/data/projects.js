@@ -1,27 +1,13 @@
-import react from "../assets/images/react.png";
-import node from "../assets/images/nodejs.png";
-import tailwind from "../assets/images/tailwind.png";
-import symfony from "../assets/images/symfony.png";
-import mysql from "../assets/images/mysql.png";
-import html from "../assets/images/html.png";
-import js from "../assets/images/javascript.png";
-import css from "../assets/images/css.png";
-
-import defaultImg from "../assets/images/screenshot/defaultScreen.png";
-
-import marsaiImg from "../assets/images/screenshot/screenshotMarsai.png";
-import protegeoImg from "../assets/images/screenshot/screenshotProtegeo.png";
-import calculatorImg from "../assets/images/screenshot/screenshotCalculator.png";
-import vitatrackImg from "../assets/images/screenshot/screenshotVitatrack.png";
-import eventupImg from "../assets/images/screenshot/screenshotEventUp.png";
+import { cssIcon, htmlIcon, jsIcon, mysqlIcon, nodeIcon, reactIcon, symfonyIcon, tailwindIcon } from "../assets/images";
+import { Calculator, defaultScreen, EventUp, Marsai, Protegeo, Vitatrack } from "../assets/images/screenshot";
 
 const projects = [
     {
         id: 1,
         variant: "primary",
-        img: protegeoImg,
+        img: Protegeo,
         techs: ["React", "Symfony", "MySQL"],
-        icon_techs: [react, symfony, mysql],
+        icon_techs: [reactIcon, symfonyIcon, mysqlIcon],
 
         primaryButton: {
             href: "https://www.protegeo.fr",
@@ -66,9 +52,9 @@ const projects = [
     {
         id: 2,
         variant: "secondary",
-        img: marsaiImg,
+        img: Marsai,
         techs: ["React", "Node", "MySQL", "Tailwind"],
-        icon_techs: [react, node, mysql, tailwind],
+        icon_techs: [reactIcon, nodeIcon, mysqlIcon, tailwindIcon],
 
         secondaryButton: {
             href: "https://github.com/LorianaD/project_marsai-bordeaux-groupe_LVETM",
@@ -129,9 +115,9 @@ const projects = [
     {
         id: 3,
         variant: "secondary",
-        img: defaultImg,
+        img: defaultScreen,
         techs: ["Symfony", "MySQL"],
-        icon_techs: [symfony, mysql],
+        icon_techs: [symfonyIcon, mysqlIcon],
 
         secondaryButton: {
             href: "https://github.com/LorianaD/sports-club-manager",
@@ -168,9 +154,9 @@ const projects = [
     {
         id: 4,
         variant: "secondary",
-        img: defaultImg,
+        img: defaultScreen,
         techs: ["Symfony", "MySQL"],
-        icon_techs: [symfony, mysql],
+        icon_techs: [symfonyIcon, mysqlIcon],
 
         secondaryButton: {
             href: "https://github.com/LorianaD/motus",
@@ -207,9 +193,9 @@ const projects = [
     {
         id: 5,
         variant: "secondary",
-        img: defaultImg,
+        img: defaultScreen,
         techs: ["React", "Symfony", "MySQL"],
-        icon_techs: [react, symfony, mysql],
+        icon_techs: [reactIcon, symfonyIcon, mysqlIcon],
 
         secondaryButton: {
             href: "https://github.com/LorianaD/budget_management",
@@ -246,9 +232,9 @@ const projects = [
     {
         id: 6,
         variant: "secondary",
-        img: vitatrackImg,
+        img: Vitatrack,
         techs: ["React", "Node", "MySQL"],
-        icon_techs: [react, node, mysql],
+        icon_techs: [reactIcon, nodeIcon, mysqlIcon],
 
         primaryButton: {
             href: "https://vitatrack.dianoholding.com/",
@@ -293,9 +279,9 @@ const projects = [
     {
         id: 7,
         variant: "secondary",
-        img: eventupImg,
+        img: EventUp,
         techs: ["React", "Node", "MySQL"],
-        icon_techs: [react, node, mysql],
+        icon_techs: [reactIcon, nodeIcon, mysqlIcon],
 
         primaryButton: {
             href: "https://event-ia.netlify.app/",
@@ -347,7 +333,7 @@ const projects = [
     {
         id: 8,
         variant: "secondary",
-        img: defaultImg,
+        img: defaultScreen,
         techs: ["Angular", "TypeScript", "Java"],
         icon_techs: [],
 
@@ -380,9 +366,9 @@ const projects = [
     {
         id: 9,
         variant: "secondary",
-        img: defaultImg,
+        img: defaultScreen,
         techs: ["Symfony", "MySQL"],
-        icon_techs: [symfony, mysql],
+        icon_techs: [symfonyIcon, mysqlIcon],
 
         secondaryButton: {
             href: "https://github.com/LorianaD/projet_tableflow",
@@ -420,9 +406,9 @@ const projects = [
     {
         id: 10,
         variant: "secondary",
-        img: calculatorImg,
+        img: Calculator,
         techs: ["HTML", "CSS", "JS"],
-        icon_techs: [html, css, js],
+        icon_techs: [htmlIcon, cssIcon, jsIcon],
 
         primaryButton: {
             href: "https://petit-mathogenie.dianoholding.com",
