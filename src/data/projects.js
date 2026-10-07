@@ -1,5 +1,5 @@
-import { cssIcon, htmlIcon, jsIcon, mysqlIcon, nodeIcon, reactIcon, symfonyIcon, tailwindIcon } from "../assets/images";
-import { Calculator, defaultScreen, EventUp, Marsai, Protegeo, Vitatrack } from "../assets/images/screenshot";
+import { angularIcon, cssIcon, htmlIcon, javaIcon, jsIcon, mysqlIcon, nodeIcon, reactIcon, symfonyIcon, tailwindIcon, typescriptIcon } from "../assets/images";
+import { BoutiqueLolo, Calculator, defaultScreen, EventUp, Marsai, Motus, Protegeo, SportsClubManager, Tableflow, Vitatrack } from "../assets/images/screenshot";
 
 const projects = [
     {
@@ -115,7 +115,7 @@ const projects = [
     {
         id: 3,
         variant: "secondary",
-        img: defaultScreen,
+        img: SportsClubManager,
         techs: ["Symfony", "MySQL"],
         icon_techs: [symfonyIcon, mysqlIcon],
 
@@ -155,45 +155,6 @@ const projects = [
         id: 4,
         variant: "secondary",
         img: defaultScreen,
-        techs: ["Symfony", "MySQL"],
-        icon_techs: [symfonyIcon, mysqlIcon],
-
-        secondaryButton: {
-            href: "https://github.com/LorianaD/motus",
-            variant: "secondary",
-        },
-
-        translations: {
-            fr: {
-                title: "Motus – Jeu de lettres",
-                description:
-                    "Adaptation du jeu Motus développée avec Symfony. Le joueur doit retrouver un mot choisi aléatoirement dans une base de données en un maximum de six tentatives, avec retour visuel sur la position des lettres.",
-                status: "En développement – version avancée",
-                secondaryButtonLabel: "Voir le code",
-            },
-
-            en: {
-                title: "Motus – Word Game",
-                description:
-                    "Adaptation of the Motus word game developed with Symfony. The player must guess a randomly selected word from a database within six attempts, with visual feedback on letter positions.",
-                status: "In development – advanced version",
-                secondaryButtonLabel: "View code",
-            },
-
-            it: {
-                title: "Motus – Gioco di parole",
-                description:
-                    "Adattamento del gioco Motus sviluppato con Symfony. Il giocatore deve indovinare una parola scelta casualmente dal database entro sei tentativi, con indicazioni visive sulla posizione delle lettere.",
-                status: "In sviluppo – versione avanzata",
-                secondaryButtonLabel: "Vedi il codice",
-            },
-        },
-    },
-
-    {
-        id: 5,
-        variant: "secondary",
-        img: defaultScreen,
         techs: ["React", "Symfony", "MySQL"],
         icon_techs: [reactIcon, symfonyIcon, mysqlIcon],
 
@@ -205,24 +166,21 @@ const projects = [
         translations: {
             fr: {
                 title: "Budget Manager – Gestion budgétaire",
-                description:
-                    "Application web full-stack de gestion financière personnelle développée avec React et Symfony. Le projet comprend une API REST sécurisée, une base de données MySQL et une interface destinée au suivi des finances et des objectifs d’épargne.",
+                description: "Application de gestion financière personnelle conçue autour d’une API REST Symfony sécurisée et d’une base de données MySQL. L’API permet de gérer les revenus, dépenses, budgets, catégories et objectifs d’épargne. Le développement de l’interface React constitue la prochaine étape du projet.",
                 status: "En développement – API réalisée",
                 secondaryButtonLabel: "Voir le code",
             },
 
             en: {
                 title: "Budget Manager – Personal Finance Management",
-                description:
-                    "Full-stack personal finance management application developed with React and Symfony. The project includes a secure REST API, a MySQL database and an interface for tracking finances and savings goals.",
+                description: "Personal finance management application built around a secure Symfony REST API and a MySQL database. The API manages income, expenses, budgets, categories and savings goals. Developing the React interface is the next stage of the project.",
                 status: "In development – API completed",
                 secondaryButtonLabel: "View code",
             },
 
             it: {
                 title: "Budget Manager – Gestione finanziaria personale",
-                description:
-                    "Applicazione full-stack per la gestione delle finanze personali sviluppata con React e Symfony. Il progetto comprende un’API REST sicura, un database MySQL e un’interfaccia per il monitoraggio delle finanze e degli obiettivi di risparmio.",
+                description: "Applicazione per la gestione delle finanze personali basata su un'API REST Symfony sicura e un database MySQL. L'API permette di gestire entrate, spese, budget, categorie e obiettivi di risparmio. Lo sviluppo dell'interfaccia React rappresenta la prossima fase del progetto.",
                 status: "In sviluppo – API realizzata",
                 secondaryButtonLabel: "Vedi il codice",
             },
@@ -230,7 +188,7 @@ const projects = [
     },
 
     {
-        id: 6,
+        id: 5,
         variant: "secondary",
         img: Vitatrack,
         techs: ["React", "Node", "MySQL"],
@@ -277,65 +235,21 @@ const projects = [
     },
 
     {
-        id: 7,
+        id: 6,
         variant: "secondary",
-        img: EventUp,
-        techs: ["React", "Node", "MySQL"],
-        icon_techs: [reactIcon, nodeIcon, mysqlIcon],
+        img: BoutiqueLolo,
+        techs: ["Angular", "TypeScript", "Java"],
+        icon_techs: [angularIcon, typescriptIcon, javaIcon],
 
-        primaryButton: {
-            href: "https://event-ia.netlify.app/",
-            variant: "primary",
-        },
+        // primaryButton: {
+        //     href: "",
+        //     variant: "primary",
+        // },
 
         secondaryButton: {
-            href: "https://github.com/LorianaD/projet-eventup",
+            href: "https://github.com/LorianaD/boutique_loce-front",
             variant: "secondary",
         },
-
-        translations: {
-            fr: {
-                title: "EventUp – Plateforme événementielle",
-                description:
-                    "Développement d’une application web full-stack axée sur la structuration du projet et la factorisation du code. Mise en place d’un système d’authentification et de fonctionnalités d’upload de médias.",
-                status: "En développement – temporairement en pause",
-                primaryButtonLabel: "Voir le projet",
-                secondaryButtonLabel: "Voir le code",
-            },
-
-            en: {
-                title: "EventUp – Event Platform",
-                description:
-                    "Development of a full-stack web application focused on project structure and code factorization, including authentication and media upload features.",
-                status: "In development – temporarily paused",
-                primaryButtonLabel: "View project",
-                secondaryButtonLabel: "View code",
-            },
-
-            it: {
-                title: "EventUp – Piattaforma per eventi",
-                description:
-                    "Sviluppo di un’applicazione web full-stack focalizzata sulla strutturazione del progetto e sulla fattorizzazione del codice, con autenticazione e funzionalità di upload dei media.",
-                status: "In sviluppo – temporaneamente in pausa",
-                primaryButtonLabel: "Vedi il progetto",
-                secondaryButtonLabel: "Vedi il codice",
-            },
-        },
-    },
-
-    /*
-    |--------------------------------------------------------------------------
-    | PROJETS MASQUÉS TEMPORAIREMENT
-    |--------------------------------------------------------------------------
-    */
-
-    /*
-    {
-        id: 8,
-        variant: "secondary",
-        img: defaultScreen,
-        techs: ["Angular", "TypeScript", "Java"],
-        icon_techs: [],
 
         translations: {
             fr: {
@@ -343,6 +257,8 @@ const projects = [
                 description:
                     "Développement d’une application e-commerce full-stack avec un front-end Angular en TypeScript et une API Java. Mise en place des premières pages de navigation, notamment l’accueil, la liste des produits et le détail d’un produit.",
                 status: "En développement – temporairement en pause",
+                // primaryButtonLabel: "Voir le projet",
+                secondaryButtonLabel: "Voir le code",
             },
 
             en: {
@@ -350,6 +266,8 @@ const projects = [
                 description:
                     "Development of a full-stack e-commerce application with an Angular front-end written in TypeScript and a Java API. Implementation of the first navigation pages, including the homepage, product listing and product detail.",
                 status: "In development – temporarily paused",
+                // primaryButtonLabel: "View project",
+                secondaryButtonLabel: "View code",
             },
 
             it: {
@@ -357,16 +275,16 @@ const projects = [
                 description:
                     "Sviluppo di un’applicazione e-commerce full-stack con front-end Angular in TypeScript e API Java. Implementazione delle prime pagine di navigazione, tra cui homepage, elenco dei prodotti e dettaglio del prodotto.",
                 status: "In sviluppo – temporaneamente in pausa",
+                // primaryButtonLabel: "Vedi il progetto",
+                secondaryButtonLabel: "Vedi il codice",
             },
         },
     },
-    */
 
-    /*
     {
-        id: 9,
+        id: 7,
         variant: "secondary",
-        img: defaultScreen,
+        img: Tableflow,
         techs: ["Symfony", "MySQL"],
         icon_techs: [symfonyIcon, mysqlIcon],
 
@@ -401,54 +319,144 @@ const projects = [
             },
         },
     },
-    */
 
-    {
-        id: 10,
-        variant: "secondary",
-        img: Calculator,
-        techs: ["HTML", "CSS", "JS"],
-        icon_techs: [htmlIcon, cssIcon, jsIcon],
+    /////////////////////////////////////////////////////////////////////////////////
+    ////////// Projet Masquets : Peux important /////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////
+    
+    
+    // {
+    //     id: 8,
+    //     variant: "secondary",
+    //     img: EventUp,
+    //     techs: ["React", "Node", "MySQL"],
+    //     icon_techs: [reactIcon, nodeIcon, mysqlIcon],
 
-        primaryButton: {
-            href: "https://petit-mathogenie.dianoholding.com",
-            variant: "primary",
-        },
+    //     primaryButton: {
+    //         href: "https://event-ia.netlify.app/",
+    //         variant: "primary",
+    //     },
 
-        secondaryButton: {
-            href: "https://github.com/LorianaD/Projet-calculator",
-            variant: "secondary",
-        },
+    //     secondaryButton: {
+    //         href: "https://github.com/LorianaD/projet-eventup",
+    //         variant: "secondary",
+    //     },
 
-        translations: {
-            fr: {
-                title: "Petit Mathogénie – Calculatrice interactive",
-                description:
-                    "Développement d’une calculatrice interactive en JavaScript intégrée dans une page web conçue comme une petite expérience pédagogique autour des mathématiques.",
-                status: "En développement – temporairement en pause",
-                primaryButtonLabel: "Voir le projet",
-                secondaryButtonLabel: "Voir le code",
-            },
+    //     translations: {
+    //         fr: {
+    //             title: "EventUp – Plateforme événementielle",
+    //             description:
+    //                 "Développement d’une application web full-stack axée sur la structuration du projet et la factorisation du code. Mise en place d’un système d’authentification et de fonctionnalités d’upload de médias.",
+    //             status: "En développement – temporairement en pause",
+    //             primaryButtonLabel: "Voir le projet",
+    //             secondaryButtonLabel: "Voir le code",
+    //         },
 
-            en: {
-                title: "Petit Mathogénie – Interactive Calculator",
-                description:
-                    "Development of an interactive JavaScript calculator integrated into a web page designed as a small educational experience around mathematics.",
-                status: "In development – temporarily paused",
-                primaryButtonLabel: "View project",
-                secondaryButtonLabel: "View code",
-            },
+    //         en: {
+    //             title: "EventUp – Event Platform",
+    //             description:
+    //                 "Development of a full-stack web application focused on project structure and code factorization, including authentication and media upload features.",
+    //             status: "In development – temporarily paused",
+    //             primaryButtonLabel: "View project",
+    //             secondaryButtonLabel: "View code",
+    //         },
 
-            it: {
-                title: "Petit Mathogénie – Calcolatrice interattiva",
-                description:
-                    "Sviluppo di una calcolatrice interattiva in JavaScript integrata in una pagina web pensata come una piccola esperienza educativa dedicata alla matematica.",
-                status: "In sviluppo – temporaneamente in pausa",
-                primaryButtonLabel: "Vedi il progetto",
-                secondaryButtonLabel: "Vedi il codice",
-            },
-        },
-    },
+    //         it: {
+    //             title: "EventUp – Piattaforma per eventi",
+    //             description:
+    //                 "Sviluppo di un’applicazione web full-stack focalizzata sulla strutturazione del progetto e sulla fattorizzazione del codice, con autenticazione e funzionalità di upload dei media.",
+    //             status: "In sviluppo – temporaneamente in pausa",
+    //             primaryButtonLabel: "Vedi il progetto",
+    //             secondaryButtonLabel: "Vedi il codice",
+    //         },
+    //     },
+    // },
+
+    // {
+    //     id: 9,
+    //     variant: "secondary",
+    //     img: Motus,
+    //     techs: ["Symfony", "MySQL"],
+    //     icon_techs: [symfonyIcon, mysqlIcon],
+
+    //     secondaryButton: {
+    //         href: "https://github.com/LorianaD/motus",
+    //         variant: "secondary",
+    //     },
+
+    //     translations: {
+    //         fr: {
+    //             title: "Motus – Jeu de lettres",
+    //             description:
+    //                 "Adaptation du jeu Motus développée avec Symfony. Le joueur doit retrouver un mot choisi aléatoirement dans une base de données en un maximum de six tentatives, avec retour visuel sur la position des lettres.",
+    //             status: "En développement – version avancée",
+    //             secondaryButtonLabel: "Voir le code",
+    //         },
+
+    //         en: {
+    //             title: "Motus – Word Game",
+    //             description:
+    //                 "Adaptation of the Motus word game developed with Symfony. The player must guess a randomly selected word from a database within six attempts, with visual feedback on letter positions.",
+    //             status: "In development – advanced version",
+    //             secondaryButtonLabel: "View code",
+    //         },
+
+    //         it: {
+    //             title: "Motus – Gioco di parole",
+    //             description:
+    //                 "Adattamento del gioco Motus sviluppato con Symfony. Il giocatore deve indovinare una parola scelta casualmente dal database entro sei tentativi, con indicazioni visive sulla posizione delle lettere.",
+    //             status: "In sviluppo – versione avanzata",
+    //             secondaryButtonLabel: "Vedi il codice",
+    //         },
+    //     },
+    // },
+
+    // {
+    //     id: 10,
+    //     variant: "secondary",
+    //     img: Calculator,
+    //     techs: ["HTML", "CSS", "JS"],
+    //     icon_techs: [htmlIcon, cssIcon, jsIcon],
+
+    //     primaryButton: {
+    //         href: "https://petit-mathogenie.dianoholding.com",
+    //         variant: "primary",
+    //     },
+
+    //     secondaryButton: {
+    //         href: "https://github.com/LorianaD/Projet-calculator",
+    //         variant: "secondary",
+    //     },
+
+    //     translations: {
+    //         fr: {
+    //             title: "Petit Mathogénie – Calculatrice interactive",
+    //             description:
+    //                 "Développement d’une calculatrice interactive en JavaScript intégrée dans une page web conçue comme une petite expérience pédagogique autour des mathématiques.",
+    //             status: "En développement – temporairement en pause",
+    //             primaryButtonLabel: "Voir le projet",
+    //             secondaryButtonLabel: "Voir le code",
+    //         },
+
+    //         en: {
+    //             title: "Petit Mathogénie – Interactive Calculator",
+    //             description:
+    //                 "Development of an interactive JavaScript calculator integrated into a web page designed as a small educational experience around mathematics.",
+    //             status: "In development – temporarily paused",
+    //             primaryButtonLabel: "View project",
+    //             secondaryButtonLabel: "View code",
+    //         },
+
+    //         it: {
+    //             title: "Petit Mathogénie – Calcolatrice interattiva",
+    //             description:
+    //                 "Sviluppo di una calcolatrice interattiva in JavaScript integrata in una pagina web pensata come una piccola esperienza educativa dedicata alla matematica.",
+    //             status: "In sviluppo – temporaneamente in pausa",
+    //             primaryButtonLabel: "Vedi il progetto",
+    //             secondaryButtonLabel: "Vedi il codice",
+    //         },
+    //     },
+    // },
 ];
 
 export default projects;
