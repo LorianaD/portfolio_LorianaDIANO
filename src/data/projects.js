@@ -1,5 +1,5 @@
-import { angularIcon, cssIcon, htmlIcon, javaIcon, jsIcon, mysqlIcon, nodeIcon, reactIcon, symfonyIcon, tailwindIcon, typescriptIcon } from "../assets/images";
-import { BoutiqueLolo, Calculator, defaultScreen, EventUp, Marsai, Motus, Protegeo, SportsClubManager, Tableflow, Vitatrack } from "../assets/images/screenshot";
+import { angularIcon, javaIcon, mysqlIcon, nodeIcon, reactIcon, symfonyIcon, tailwindIcon, typescriptIcon, viteIcon } from "../assets/images";
+import { BoutiqueLolo, Calculator, defaultScreen, EventUp, LearnToDev, Marsai, Motus, Protegeo, SportsClubManager, Tableflow, Vitatrack } from "../assets/images/screenshot";
 
 const projects = [
     {
@@ -323,8 +323,8 @@ const projects = [
     /////////////////////////////////////////////////////////////////////////////////
     ////////// Projet Masquets : Peux important /////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////////
-    
-    
+
+
     // {
     //     id: 8,
     //     variant: "secondary",
@@ -457,6 +457,52 @@ const projects = [
     //         },
     //     },
     // },
+    {
+        id: 11,
+        variant: "primary",
+        img: LearnToDev,
+        techs: ["React", "TypeScript", "Vite", "Vitest", "GitHub Actions"],
+        icon_techs: [reactIcon, typescriptIcon, viteIcon],
+
+        primaryButton: {
+            href: "https://lorianad.github.io/learn-to-dev/",
+            variant: "primary",
+        },
+
+        secondaryButton: {
+            href: "https://github.com/LorianaD/learn-to-dev",
+            variant: "secondary",
+        },
+
+        translations: {
+            fr: {
+                title: "Learn to Dev – Plateforme d’apprentissage",
+                description:
+                    "Conception et développement d’une plateforme pédagogique dédiée à l’apprentissage et à la révision du développement web. L’application propose des cours structurés par catégories et niveaux, des exemples de code, des illustrations et des exercices pratiques. Architecture modulaire, composants réutilisables, tests unitaires et déploiement automatisé avec GitHub Actions.",
+                status: "En ligne – En évolution continue",
+                primaryButtonLabel: "Voir le projet",
+                secondaryButtonLabel: "Voir le code",
+            },
+
+            en: {
+                title: "Learn to Dev – Web Development Learning Platform",
+                description:
+                    "Design and development of an educational platform dedicated to learning and reviewing web development concepts. The application provides structured courses organized by category and difficulty level, code examples, illustrations and practical exercises. Modular architecture, reusable components, unit testing and automated deployment with GitHub Actions.",
+                status: "Live – Continuous development",
+                primaryButtonLabel: "View project",
+                secondaryButtonLabel: "View code",
+            },
+
+            it: {
+                title: "Learn to Dev – Piattaforma di apprendimento",
+                description:
+                    "Progettazione e sviluppo di una piattaforma didattica dedicata all’apprendimento e al ripasso dello sviluppo web. L’applicazione propone corsi strutturati per categorie e livelli, esempi di codice, illustrazioni ed esercizi pratici. Architettura modulare, componenti riutilizzabili, test unitari e distribuzione automatizzata con GitHub Actions.",
+                status: "Online – In continua evoluzione",
+                primaryButtonLabel: "Vedi il progetto",
+                secondaryButtonLabel: "Vedi il codice",
+            },
+        },
+    },
 ];
 
 export default projects;

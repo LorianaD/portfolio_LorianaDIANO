@@ -5,6 +5,7 @@ import reactIcon from "./react.svg";
 import angularIcon from "./angular.png";
 import typescriptIcon from "./typescript.png";
 import tailwindIcon from "./tailwind.png";
+import viteIcon from "./vite.png";
 
 import nodeIcon from "./nodejs.png";
 import phpIcon from "./php.png";
@@ -28,6 +29,7 @@ export {
     angularIcon,
     typescriptIcon,
     tailwindIcon,
+    viteIcon,
 
     nodeIcon,
     phpIcon,

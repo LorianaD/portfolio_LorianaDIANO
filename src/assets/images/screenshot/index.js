@@ -8,6 +8,7 @@ import SportsClubManager from './screenshotSportsClubManager.png';
 import Motus from './screenshotMotus.png';
 import Tableflow from './screenshotTableflow.png';
 import BoutiqueLolo from './screenshotBoutiqueLolo.png';
+import LearnToDev from './screenshotLeanToDev.png';
 
 export {
     defaultScreen,
@@ -20,4 +21,5 @@ export {
     Motus,
     Tableflow,
     BoutiqueLolo,
+    LearnToDev,
 }
