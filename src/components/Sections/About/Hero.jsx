@@ -2,7 +2,6 @@ import SectionHero from "../../ui/SectionHero";
 import profile from "../../../assets/images/photo.png";
 import Badge from "../../ui/Badge";
 import Btn from "../../ui/Btn";
-import cv from "../../../assets/documents/CV_LorianaDIANO_DeveloppeuseWeb.pdf";
 import { aboutHero } from "../../../data/aboutPage";
 import getTranslatedData from "../../../helper/translations/getTranslatedData";
 import useImageModal from "../../../hooks/useImageModal";
